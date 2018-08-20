@@ -1,6 +1,11 @@
-﻿using DKCoreShop.Data;
+﻿using AutoMapper;
+using DKCoreShop.Application.Implementation;
+using DKCoreShop.Application.Interfaces;
+using DKCoreShop.Data;
 using DKCoreShop.Data.EF;
+using DKCoreShop.Data.EF.Repositories;
 using DKCoreShop.Data.Entities;
+using DKCoreShop.Data.IRepositories;
 using DKCoreShop.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,8 +40,15 @@ namespace DKCoreShop
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
 
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
+
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
+
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
+
             services.AddMvc();
         }
 
