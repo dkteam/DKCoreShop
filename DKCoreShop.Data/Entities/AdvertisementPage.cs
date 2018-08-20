@@ -9,6 +9,6 @@ namespace DKCoreShop.Data.Entities
     {
         public string Name { get; set; }
 
-        public virtual ICollection<AdvertisementPosition> AdvertistmentPositions { get; set; }
+        public virtual ICollection<AdvertisementPosition> AdvertisementPositions { get; set; }
     }
 }

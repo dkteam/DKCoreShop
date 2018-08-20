@@ -51,9 +51,9 @@ namespace DKCoreShop.Data.EF
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<WholePrice> WholePrices { get; set; }
 
-        public DbSet<AdvertisementPage> AdvertistmentPages { get; set; }
-        public DbSet<Advertisement> Advertistments { get; set; }
-        public DbSet<AdvertisementPosition> AdvertistmentPositions { get; set; }
+        public DbSet<AdvertisementPage> AdvertisementPages { get; set; }
+        public DbSet<Advertisement> Advertisements { get; set; }
+        public DbSet<AdvertisementPosition> AdvertisementPositions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

@@ -15,8 +15,8 @@ namespace DKCoreShop.Data.Entities
         public string Name { get; set; }
 
         [ForeignKey("PageId")]
-        public virtual AdvertisementPage AdvertistmentPage { get; set; }
+        public virtual AdvertisementPage AdvertisementPage { get; set; }
 
-        public virtual ICollection<Advertisement> Advertistments { get; set; }
+        public virtual ICollection<Advertisement> Advertisements { get; set; }
     }
 }
