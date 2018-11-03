@@ -8,7 +8,8 @@ namespace DKCoreShop.Data.Entities
     [Table("AdvertisementPositions")]
     public class AdvertisementPosition : DomainEntity<string>
     {
-        [StringLength(20)]
+        [StringLength(50)]
+        [Column(TypeName = "varchar(50)")]
         public string PageId { get; set; }
 
         [StringLength(250)]

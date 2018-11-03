@@ -1,5 +1,6 @@
 ﻿using DKCoreShop.Data.EF.Extensions;
 using DKCoreShop.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DKCoreShop.Data.EF.Configurations
@@ -9,7 +10,8 @@ namespace DKCoreShop.Data.EF.Configurations
         public override void Configure(EntityTypeBuilder<AdvertisementPosition> entity)
         {
             entity.Property(c => c.Id).HasMaxLength(20).IsRequired();
-            // etc.
+            //entity.Property(a => a.PageId).HasMaxLength(50).IsRequired();
+            //etc.
         }
     }
 }

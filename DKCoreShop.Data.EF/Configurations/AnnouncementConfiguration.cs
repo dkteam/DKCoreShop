@@ -1,6 +1,5 @@
 ﻿using DKCoreShop.Data.EF.Extensions;
 using DKCoreShop.Data.Entities;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
@@ -8,12 +7,12 @@ using System.Text;
 
 namespace DKCoreShop.Data.EF.Configurations
 {
-    public class TagConfiguration : DbEntityConfiguration<Tag>
+    public class AnnouncementConfiguration : DbEntityConfiguration<Announcement>
     {
-        public override void Configure(EntityTypeBuilder<Tag> entity)
+        public override void Configure(EntityTypeBuilder<Announcement> entity)
         {
             entity.Property(c => c.Id).HasMaxLength(255)
-                .IsRequired().HasColumnType("varchar(255)");
+            .IsRequired();
         }
     }
 }

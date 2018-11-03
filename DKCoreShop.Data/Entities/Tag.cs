@@ -1,14 +1,11 @@
 ﻿using DKCoreShop.Infrastructure.SharedKernel;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace DKCoreShop.Data.Entities
 {
     [Table("Tags")]
-    public class Tag:DomainEntity<string>
+    public class Tag : DomainEntity<string>
     {
         [MaxLength(50)]
         [Required]

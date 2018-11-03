@@ -9,7 +9,7 @@ namespace DKCoreShop.Data.Entities
     {
         public int ProductId { get; set; }
 
-        [StringLength(50)]
+        [StringLength(255)]
         [Column(TypeName = "varchar")]
         public string TagId { set; get; }
 
