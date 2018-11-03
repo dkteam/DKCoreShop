@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using DKCoreShop.Application.Implementation;
 using DKCoreShop.Application.Interfaces;
-using DKCoreShop.Data;
 using DKCoreShop.Data.EF;
 using DKCoreShop.Data.EF.Repositories;
 using DKCoreShop.Data.Entities;
@@ -97,6 +96,10 @@ namespace DKCoreShop
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: "areaRoute",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
