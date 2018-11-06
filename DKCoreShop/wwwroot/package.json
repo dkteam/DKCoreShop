@@ -15,6 +15,8 @@
     "flot-spline": "~0.0.1",
     "flot.curvedlines": "~1.1.1",
     "datejs": "~1.0.0-rc3",
-    "moment": "~2.22.2"
+    "moment": "~2.22.2",
+    "notifyjs": "~3.0.0",
+    "bootbox": "~4.4.0"
   }
 }

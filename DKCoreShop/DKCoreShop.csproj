@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\node_modules\bootbox\bower.json" />
+    <Content Include="wwwroot\node_modules\bootbox\header.txt" />
+    <Content Include="wwwroot\node_modules\bootbox\package.json" />
     <Content Include="wwwroot\node_modules\bootstrap-daterangepicker\bower.json" />
     <Content Include="wwwroot\node_modules\bootstrap-daterangepicker\daterangepicker.css" />
     <Content Include="wwwroot\node_modules\bootstrap-daterangepicker\demo.html" />
@@ -1201,6 +1204,9 @@
     <Content Include="wwwroot\node_modules\jquery\package.json" />
     <Content Include="wwwroot\node_modules\jquery\src\.eslintrc.json" />
     <Content Include="wwwroot\node_modules\moment\package.json" />
+    <Content Include="wwwroot\node_modules\notifyjs\jspm_packages\.dependencies.json" />
+    <Content Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9.json" />
+    <Content Include="wwwroot\node_modules\notifyjs\package.json" />
     <Content Include="wwwroot\node_modules\nprogress\bower.json" />
     <Content Include="wwwroot\node_modules\nprogress\component.json" />
     <Content Include="wwwroot\node_modules\nprogress\nprogress.css" />
@@ -1224,6 +1230,33 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\node_modules\bootbox\.jshintrc" />
+    <None Include="wwwroot\node_modules\bootbox\.npmignore" />
+    <None Include="wwwroot\node_modules\bootbox\.travis.yml" />
+    <None Include="wwwroot\node_modules\bootbox\bootbox.js" />
+    <None Include="wwwroot\node_modules\bootbox\bootbox.min.js" />
+    <None Include="wwwroot\node_modules\bootbox\build\calculate-size" />
+    <None Include="wwwroot\node_modules\bootbox\CHANGELOG.md" />
+    <None Include="wwwroot\node_modules\bootbox\CONTRIBUTING.md" />
+    <None Include="wwwroot\node_modules\bootbox\Gruntfile.js" />
+    <None Include="wwwroot\node_modules\bootbox\karma-base.conf.js" />
+    <None Include="wwwroot\node_modules\bootbox\karma-jquery-latest.conf.js" />
+    <None Include="wwwroot\node_modules\bootbox\karma.conf.js" />
+    <None Include="wwwroot\node_modules\bootbox\LICENSE.md" />
+    <None Include="wwwroot\node_modules\bootbox\README.md" />
+    <None Include="wwwroot\node_modules\bootbox\tests\alert.test.js" />
+    <None Include="wwwroot\node_modules\bootbox\tests\bootbox.test.js" />
+    <None Include="wwwroot\node_modules\bootbox\tests\confirm.test.coffee" />
+    <None Include="wwwroot\node_modules\bootbox\tests\defaults.test.js" />
+    <None Include="wwwroot\node_modules\bootbox\tests\dialog.test.coffee" />
+    <None Include="wwwroot\node_modules\bootbox\tests\locales.test.coffee" />
+    <None Include="wwwroot\node_modules\bootbox\tests\prompt.test.coffee" />
+    <None Include="wwwroot\node_modules\bootbox\tests\vendor\bootstrap-3.0.0.min.js" />
+    <None Include="wwwroot\node_modules\bootbox\tests\vendor\bootstrap-3.1.1.min.js" />
+    <None Include="wwwroot\node_modules\bootbox\tests\vendor\bootstrap-3.3.2.min.js" />
+    <None Include="wwwroot\node_modules\bootbox\tests\vendor\jquery-1.10.2.min.js" />
+    <None Include="wwwroot\node_modules\bootbox\tests\vendor\jquery-1.11.2.min.js" />
+    <None Include="wwwroot\node_modules\bootbox\tests\vendor\jquery-1.8.3.min.js" />
     <None Include="wwwroot\node_modules\bootstrap-daterangepicker\daterangepicker.js" />
     <None Include="wwwroot\node_modules\bootstrap-daterangepicker\example\amd\main.js" />
     <None Include="wwwroot\node_modules\bootstrap-daterangepicker\example\amd\require.js" />
@@ -5248,6 +5281,51 @@
     <None Include="wwwroot\node_modules\moment\src\locale\zh-hk.js" />
     <None Include="wwwroot\node_modules\moment\src\locale\zh-tw.js" />
     <None Include="wwwroot\node_modules\moment\src\moment.js" />
+    <None Include="wwwroot\node_modules\notifyjs\.npmignore" />
+    <None Include="wwwroot\node_modules\notifyjs\dist\notify.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\.loaderversions" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\.jspm-hash" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\asyncToGenerator.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\classCallCheck.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\createClass.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\defaults.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\defineEnumerableProperties.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\defineProperty.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\extends.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\get.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\inherits.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\instanceof.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\interopRequireDefault.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\interopRequireWildcard.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\jsx.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\newArrowCheck.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\objectDestructuringEmpty.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\objectWithoutProperties.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\possibleConstructorReturn.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\selfGlobal.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\set.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\slicedToArray.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\slicedToArrayLoose.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\taggedTemplateLiteral.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\taggedTemplateLiteralLoose.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\temporalRef.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\temporalUndefined.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\toArray.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\toConsumableArray.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\babel-helpers\typeof.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\plugin-babel.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\regenerator-runtime.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\systemjs-babel-browser.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\npm\systemjs-plugin-babel%400.0.9\systemjs-babel-node.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\system-polyfills.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\system-polyfills.js.map" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\system-polyfills.src.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\system.js" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\system.js.map" />
+    <None Include="wwwroot\node_modules\notifyjs\jspm_packages\system.src.js" />
+    <None Include="wwwroot\node_modules\notifyjs\LICENSE.md" />
+    <None Include="wwwroot\node_modules\notifyjs\README.md" />
     <None Include="wwwroot\node_modules\nprogress\.npmignore" />
     <None Include="wwwroot\node_modules\nprogress\.travis.yml" />
     <None Include="wwwroot\node_modules\nprogress\History.md" />
