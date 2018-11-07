@@ -426,3 +426,317 @@ END" (0723d8ff)
 2018-11-07T08:56:12.7371019+07:00 0HLI4AGMLFQS3:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
 2018-11-07T08:56:12.9436905+07:00 0HLI4AGMLFQS3:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 467.57ms (afa2e885)
 2018-11-07T08:56:12.9517433+07:00 0HLI4AGMLFQS3:00000002 [INF] Request finished in 493.7237ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:21:54.5194107+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-07T09:21:54.7382252+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:21:54.7621450+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:21:54.7745729+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:21:54.7935229+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-07T09:21:54.8164113+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-07T09:21:54.8265162+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-07T09:21:54.8365562+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-07T09:21:54.8468598+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-07T09:21:54.8572514+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-07T09:21:54.8669549+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-07T09:21:54.8789244+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:21:54.8887834+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:21:54.9010611+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:21:55.5864824+07:00 0HLI4AV4MNAB3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/   (ca22a1cb)
+2018-11-07T09:21:55.6584937+07:00 0HLI4AV4MNAB3:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:21:55.8563281+07:00 0HLI4AV4MNAB3:00000001 [INF] Executing action method "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-07T09:21:58.9564972+07:00 0HLI4AV4MNAB3:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-07T09:21:59.5788272+07:00 0HLI4AV4MNAB3:00000001 [INF] Executed action "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" in 3722.7817ms (afa2e885)
+2018-11-07T09:21:59.5971597+07:00 0HLI4AV4MNAB3:00000001 [INF] Request finished in 4050.1774ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:22:00.2029078+07:00 0HLI4AV4MNAB3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-07T09:22:00.2133847+07:00 0HLI4AV4MNAB3:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:22:00.2323036+07:00 0HLI4AV4MNAB3:00000002 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-07T09:22:00.5783741+07:00 0HLI4AV4MNAB3:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-07T09:22:00.6279499+07:00 0HLI4AV4MNAB3:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 400.7304ms (afa2e885)
+2018-11-07T09:22:00.6359686+07:00 0HLI4AV4MNAB3:00000002 [INF] Request finished in 436.7659ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:22:01.0964249+07:00 0HLI4AV4MNAB3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-07T09:22:01.1030930+07:00 0HLI4AV4MNAB3:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:22:01.1103613+07:00 0HLI4AV4MNAB3:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-07T09:22:01.1171917+07:00 0HLI4AV4MNAB3:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-07T09:22:01.1245855+07:00 0HLI4AV4MNAB3:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 14.5176ms (afa2e885)
+2018-11-07T09:22:01.1336058+07:00 0HLI4AV4MNAB3:00000003 [INF] Request finished in 34.5977ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:22:01.2175052+07:00 0HLI4AV4MNAB4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/dist/additional-methods.min.js   (ca22a1cb)
+2018-11-07T09:22:01.2206154+07:00 0HLI4AV4MNAB6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-11-07T09:22:01.2257916+07:00 0HLI4AV4MNAB5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js   (ca22a1cb)
+2018-11-07T09:22:01.2281441+07:00 0HLI4AV4MNAB3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/dist/jquery.validate.min.js   (ca22a1cb)
+2018-11-07T09:22:01.2906914+07:00 0HLI4AV4MNAB5:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js"' (27b0a520)
+2018-11-07T09:22:01.2924528+07:00 0HLI4AV4MNAB4:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation\dist\additional-methods.min.js"' (27b0a520)
+2018-11-07T09:22:01.2953898+07:00 0HLI4AV4MNAB3:00000004 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js"' (27b0a520)
+2018-11-07T09:22:01.2986877+07:00 0HLI4AV4MNAB6:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-11-07T09:22:01.3072639+07:00 0HLI4AV4MNAB6:00000001 [INF] Request finished in 160.872ms 200 application/javascript (791a596a)
+2018-11-07T09:22:01.4066781+07:00 0HLI4AV4MNAB4:00000001 [INF] Request finished in 216.3083ms 200 application/javascript (791a596a)
+2018-11-07T09:22:01.4109330+07:00 0HLI4AV4MNAB3:00000004 [INF] Request finished in 216.3005ms 200 application/javascript (791a596a)
+2018-11-07T09:22:01.4445303+07:00 0HLI4AV4MNAB5:00000001 [INF] Request finished in 265.2329ms 200 application/javascript (791a596a)
+2018-11-07T09:22:07.5627051+07:00 0HLI4AV4MNAB5:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2018-11-07T09:22:07.5692956+07:00 0HLI4AV4MNAB5:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:22:07.6630493+07:00 0HLI4AV4MNAB5:00000002 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2018-11-07T09:22:07.6905304+07:00 0HLI4AV4MNAB5:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-07T09:22:07.7370325+07:00 0HLI4AV4MNAB5:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 121.9928ms (afa2e885)
+2018-11-07T09:22:07.7450880+07:00 0HLI4AV4MNAB5:00000002 [INF] Request finished in 182.5281ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-07T09:22:09.2880724+07:00 0HLI4AV4MNAB5:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2018-11-07T09:22:09.2941741+07:00 0HLI4AV4MNAB5:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:22:09.3029034+07:00 0HLI4AV4MNAB5:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2018-11-07T09:22:09.3091597+07:00 0HLI4AV4MNAB5:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-07T09:22:09.3155335+07:00 0HLI4AV4MNAB5:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 14.8156ms (afa2e885)
+2018-11-07T09:22:09.3216488+07:00 0HLI4AV4MNAB5:00000003 [INF] Request finished in 33.8862ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-07T09:22:23.6883859+07:00 0HLI4AV4MNAB5:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-07T09:22:23.6964571+07:00 0HLI4AV4MNAB5:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:22:23.7041560+07:00 0HLI4AV4MNAB5:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-07T09:22:23.8489491+07:00 0HLI4AV4MNAB5:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-07T09:22:23.8989707+07:00 0HLI4AV4MNAB5:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 194.9345ms (afa2e885)
+2018-11-07T09:22:23.9086566+07:00 0HLI4AV4MNAB5:00000004 [INF] Request finished in 217.7018ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:22:23.9210911+07:00 0HLI4AV4MNAB5:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-11-07T09:22:23.9317638+07:00 0HLI4AV4MNAB5:00000005 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2018-11-07T09:22:23.9424828+07:00 0HLI4AV4MNAB5:00000005 [INF] Request finished in 22.1188ms 304 application/javascript (791a596a)
+2018-11-07T09:22:23.9807676+07:00 0HLI4AV4MNAB5:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:10454/favicon.ico   (ca22a1cb)
+2018-11-07T09:22:24.0158165+07:00 0HLI4AV4MNAB5:00000006 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2018-11-07T09:22:24.0484119+07:00 0HLI4AV4MNAB5:00000006 [INF] Request finished in 65.9838ms 200 image/x-icon (791a596a)
+2018-11-07T09:22:30.2575701+07:00 0HLI4AV4MNAB5:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2018-11-07T09:22:30.2660174+07:00 0HLI4AV4MNAB5:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:22:30.2742103+07:00 0HLI4AV4MNAB5:00000007 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2018-11-07T09:22:30.2807163+07:00 0HLI4AV4MNAB5:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-07T09:22:30.2886100+07:00 0HLI4AV4MNAB5:00000007 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 14.6858ms (afa2e885)
+2018-11-07T09:22:30.2965631+07:00 0HLI4AV4MNAB5:00000007 [INF] Request finished in 37.8902ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-07T09:26:16.4775360+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-07T09:26:16.6793097+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:26:16.7021936+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:26:16.7132850+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:26:16.7312172+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-07T09:26:16.7565991+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-07T09:26:16.7678277+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-07T09:26:16.7768487+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-07T09:26:16.7871486+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-07T09:26:16.7970053+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-07T09:26:16.8144380+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-07T09:26:16.8255762+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:26:16.8343356+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:26:16.8443908+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-07T09:26:17.5953028+07:00 0HLI4B1IP38TV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/   (ca22a1cb)
+2018-11-07T09:26:17.6501068+07:00 0HLI4B1IP38TV:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-07T09:26:17.7253980+07:00 0HLI4B1IP38TV:00000001 [INF] Executed DbCommand ("36"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-11-07T09:26:17.8328526+07:00 0HLI4B1IP38TV:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-07T09:26:17.8819457+07:00 0HLI4B1IP38TV:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-07T09:26:17.9040582+07:00 0HLI4B1IP38TV:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-07T09:26:17.9320748+07:00 0HLI4B1IP38TV:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-07T09:26:17.9415847+07:00 0HLI4B1IP38TV:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:26:18.1463008+07:00 0HLI4B1IP38TV:00000001 [INF] Executing action method "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-07T09:26:21.5887525+07:00 0HLI4B1IP38TV:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-07T09:26:22.3697992+07:00 0HLI4B1IP38TV:00000001 [INF] Executed action "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" in 4226.1237ms (afa2e885)
+2018-11-07T09:26:22.3933115+07:00 0HLI4B1IP38TV:00000001 [INF] Request finished in 4831.7562ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:27:35.3438855+07:00 0HLI4B1IP38TV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-07T09:27:35.3533181+07:00 0HLI4B1IP38TV:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:27:35.3706903+07:00 0HLI4B1IP38TV:00000002 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-07T09:27:35.6731539+07:00 0HLI4B1IP38TV:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-07T09:27:35.7181693+07:00 0HLI4B1IP38TV:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 352.4285ms (afa2e885)
+2018-11-07T09:27:35.7256150+07:00 0HLI4B1IP38TV:00000002 [INF] Request finished in 381.2541ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:27:36.2606658+07:00 0HLI4B1IP38TV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-07T09:27:36.2656320+07:00 0HLI4B1IP38TV:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:27:36.2720435+07:00 0HLI4B1IP38TV:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-07T09:27:36.2779161+07:00 0HLI4B1IP38TV:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-07T09:27:36.2866381+07:00 0HLI4B1IP38TV:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 12.9307ms (afa2e885)
+2018-11-07T09:27:36.2925449+07:00 0HLI4B1IP38TV:00000003 [INF] Request finished in 30.8125ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:27:36.3062829+07:00 0HLI4B1IP38TV:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-11-07T09:27:36.3169574+07:00 0HLI4B1IP38TV:00000004 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2018-11-07T09:27:36.3256362+07:00 0HLI4B1IP38TV:00000004 [INF] Request finished in 23.3785ms 304 application/javascript (791a596a)
+2018-11-07T09:27:41.8592788+07:00 0HLI4B1IP38TV:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2018-11-07T09:27:41.8649042+07:00 0HLI4B1IP38TV:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:27:41.9649711+07:00 0HLI4B1IP38TV:00000005 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2018-11-07T09:27:41.9936482+07:00 0HLI4B1IP38TV:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-07T09:27:42.0538719+07:00 0HLI4B1IP38TV:00000005 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 136.2693ms (afa2e885)
+2018-11-07T09:27:42.0623703+07:00 0HLI4B1IP38TV:00000005 [INF] Request finished in 202.1206ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-07T09:30:52.5555250+07:00 0HLI4B1IP38TV:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 19 (ca22a1cb)
+2018-11-07T09:30:52.5613941+07:00 0HLI4B1IP38TV:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:30:52.5676748+07:00 0HLI4B1IP38TV:00000006 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2018-11-07T09:30:52.5724175+07:00 0HLI4B1IP38TV:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-07T09:30:52.5776254+07:00 0HLI4B1IP38TV:00000006 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 10.8242ms (afa2e885)
+2018-11-07T09:30:52.5835750+07:00 0HLI4B1IP38TV:00000006 [INF] Request finished in 27.1728ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-07T09:30:57.0404848+07:00 0HLI4B1IP38TV:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/css/bootstrap.min.css.map   (ca22a1cb)
+2018-11-07T09:30:57.0505890+07:00 0HLI4B1IP38TV:00000007 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css.map"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map"' (27b0a520)
+2018-11-07T09:30:57.0766332+07:00 0HLI4B1IP38TV:00000007 [INF] Request finished in 32.4743ms 200 text/plain (791a596a)
+2018-11-07T09:31:20.2535021+07:00 0HLI4B1IP38TV:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-07T09:31:20.2716269+07:00 0HLI4B1IP38TV:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:31:20.2778672+07:00 0HLI4B1IP38TV:00000008 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-07T09:31:20.2837733+07:00 0HLI4B1IP38TV:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-07T09:31:20.2911322+07:00 0HLI4B1IP38TV:00000008 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 12.4854ms (afa2e885)
+2018-11-07T09:31:20.2980312+07:00 0HLI4B1IP38TV:00000008 [INF] Request finished in 55.8828ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:31:20.3431715+07:00 0HLI4B1IP38TV:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/css/bootstrap.min.css   (ca22a1cb)
+2018-11-07T09:31:20.4101331+07:00 0HLI4B1IP38U4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/animate.css/animate.min.css   (ca22a1cb)
+2018-11-07T09:31:20.4404662+07:00 0HLI4B1IP38U3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/nprogress/nprogress.css   (ca22a1cb)
+2018-11-07T09:31:20.4426289+07:00 0HLI4B1IP38U4:00000001 [INF] Sending file. Request path: '"/node_modules/animate.css/animate.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\animate.css\animate.min.css"' (27b0a520)
+2018-11-07T09:31:20.4954654+07:00 0HLI4B1IP38U2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/font-awesome/css/font-awesome.min.css   (ca22a1cb)
+2018-11-07T09:31:20.5042201+07:00 0HLI4B1IP38U3:00000001 [INF] Sending file. Request path: '"/node_modules/nprogress/nprogress.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\nprogress\nprogress.css"' (27b0a520)
+2018-11-07T09:31:20.5477535+07:00 0HLI4B1IP38U6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery/dist/jquery.min.js   (ca22a1cb)
+2018-11-07T09:31:20.5748712+07:00 0HLI4B1IP38U2:00000001 [INF] Sending file. Request path: '"/node_modules/font-awesome/css/font-awesome.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\font-awesome\css\font-awesome.min.css"' (27b0a520)
+2018-11-07T09:31:20.5772544+07:00 0HLI4B1IP38TV:00000009 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2018-11-07T09:31:20.5820600+07:00 0HLI4B1IP38U5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin-side/css/custom.min.css   (ca22a1cb)
+2018-11-07T09:31:20.6687740+07:00 0HLI4B1IP38U5:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\admin-side\css\custom.min.css"' (27b0a520)
+2018-11-07T09:31:20.6763380+07:00 0HLI4B1IP38U4:00000001 [INF] Request finished in 237.7513ms 200 text/css (791a596a)
+2018-11-07T09:31:20.6807630+07:00 0HLI4B1IP38U3:00000001 [INF] Request finished in 238.3698ms 200 text/css (791a596a)
+2018-11-07T09:31:20.7035115+07:00 0HLI4B1IP38U2:00000001 [INF] Request finished in 267.814ms 200 text/css (791a596a)
+2018-11-07T09:31:20.7589775+07:00 0HLI4B1IP38U6:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery\dist\jquery.min.js"' (27b0a520)
+2018-11-07T09:31:20.7615826+07:00 0HLI4B1IP38U4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/notifyjs/dist/notify.js   (ca22a1cb)
+2018-11-07T09:31:20.8341832+07:00 0HLI4B1IP38U2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/dist/additional-methods.min.js   (ca22a1cb)
+2018-11-07T09:31:20.8930754+07:00 0HLI4B1IP38TV:00000009 [INF] Request finished in 366.5513ms 200 text/css (791a596a)
+2018-11-07T09:31:20.8964844+07:00 0HLI4B1IP38U3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/dist/jquery.validate.min.js   (ca22a1cb)
+2018-11-07T09:31:20.9223614+07:00 0HLI4B1IP38U5:00000001 [INF] Request finished in 329.5758ms 200 text/css (791a596a)
+2018-11-07T09:31:20.9249227+07:00 0HLI4B1IP38U6:00000001 [INF] Request finished in 473.03ms 200 application/javascript (791a596a)
+2018-11-07T09:31:21.0210236+07:00 0HLI4B1IP38U4:00000002 [INF] Sending file. Request path: '"/node_modules/notifyjs/dist/notify.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\notifyjs\dist\notify.js"' (27b0a520)
+2018-11-07T09:31:21.0596514+07:00 0HLI4B1IP38TV:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js   (ca22a1cb)
+2018-11-07T09:31:21.0711741+07:00 0HLI4B1IP38U6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-11-07T09:31:21.1256370+07:00 0HLI4B1IP38U2:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation\dist\additional-methods.min.js"' (27b0a520)
+2018-11-07T09:31:21.1300947+07:00 0HLI4B1IP38U3:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js"' (27b0a520)
+2018-11-07T09:31:21.1536955+07:00 0HLI4B1IP38U6:00000002 [INF] Sending file. Request path: '"/node_modules/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-11-07T09:31:21.1803533+07:00 0HLI4B1IP38U4:00000002 [INF] Request finished in 336.8256ms 200 application/javascript (791a596a)
+2018-11-07T09:31:21.2308003+07:00 0HLI4B1IP38TV:0000000A [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js"' (27b0a520)
+2018-11-07T09:31:21.2716477+07:00 0HLI4B1IP38U5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-11-07T09:31:21.2984175+07:00 0HLI4B1IP38U2:00000002 [INF] Request finished in 422.394ms 200 application/javascript (791a596a)
+2018-11-07T09:31:21.3756884+07:00 0HLI4B1IP38U3:00000002 [INF] Request finished in 404.38ms 200 application/javascript (791a596a)
+2018-11-07T09:31:21.4036863+07:00 0HLI4B1IP38U2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/app/controllers/login/index.js   (ca22a1cb)
+2018-11-07T09:31:21.4795540+07:00 0HLI4B1IP38TV:0000000A [INF] Request finished in 273.5731ms 200 application/javascript (791a596a)
+2018-11-07T09:31:21.5110228+07:00 0HLI4B1IP38U5:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-11-07T09:31:21.5277569+07:00 0HLI4B1IP38U6:00000002 [INF] Request finished in 220.3483ms 200 font/woff2 (791a596a)
+2018-11-07T09:31:21.5632418+07:00 0HLI4B1IP38U2:00000003 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-11-07T09:31:21.5716719+07:00 0HLI4B1IP38U4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/app/shared/dkteam.js   (ca22a1cb)
+2018-11-07T09:31:21.6198264+07:00 0HLI4B1IP38U2:00000003 [INF] Request finished in 198.1675ms 200 application/javascript (791a596a)
+2018-11-07T09:31:21.6218900+07:00 0HLI4B1IP38U4:00000003 [INF] Sending file. Request path: '"/app/shared/dkteam.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\app\shared\dkteam.js"' (27b0a520)
+2018-11-07T09:31:21.6293711+07:00 0HLI4B1IP38U5:00000002 [INF] Request finished in 619.8214ms 200 application/javascript (791a596a)
+2018-11-07T09:31:21.6809211+07:00 0HLI4B1IP38U4:00000003 [INF] Request finished in 283.896ms 200 application/javascript (791a596a)
+2018-11-07T09:31:36.7499231+07:00 0HLI4B1IP38U4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-07T09:31:36.7552713+07:00 0HLI4B1IP38U4:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-07T09:31:36.7607195+07:00 0HLI4B1IP38U4:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-07T09:31:36.7663087+07:00 0HLI4B1IP38U4:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-07T09:31:36.7724595+07:00 0HLI4B1IP38U4:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 11.4609ms (afa2e885)
+2018-11-07T09:31:36.7782995+07:00 0HLI4B1IP38U4:00000004 [INF] Request finished in 27.9399ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-07T09:31:36.7925358+07:00 0HLI4B1IP38U4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:10454/app/controllers/login/index.js   (ca22a1cb)
+2018-11-07T09:31:36.7988265+07:00 0HLI4B1IP38U4:00000005 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-11-07T09:31:36.8050367+07:00 0HLI4B1IP38U4:00000005 [INF] Request finished in 13.5082ms 304 application/javascript (791a596a)
+2018-11-07T09:31:36.9331748+07:00 0HLI4B1IP38U4:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:10454/favicon.ico   (ca22a1cb)
+2018-11-07T09:31:36.9386505+07:00 0HLI4B1IP38U4:00000006 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2018-11-07T09:31:36.9451362+07:00 0HLI4B1IP38U4:00000006 [INF] Request finished in 12.3414ms 200 image/x-icon (791a596a)
