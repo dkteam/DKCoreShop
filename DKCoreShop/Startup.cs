@@ -5,6 +5,7 @@ using DKCoreShop.Data.EF;
 using DKCoreShop.Data.EF.Repositories;
 using DKCoreShop.Data.Entities;
 using DKCoreShop.Data.IRepositories;
+using DKCoreShop.Helpers;
 using DKCoreShop.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -68,6 +69,8 @@ namespace DKCoreShop
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddTransient<DbInitializer>();
+
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
