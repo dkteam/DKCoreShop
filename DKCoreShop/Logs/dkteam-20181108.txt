@@ -1,0 +1,1576 @@
+2018-11-08T14:20:43.1010025+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:20:43.4156319+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:20:43.4395561+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:20:43.4507743+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:20:43.4717207+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-08T14:20:43.5049721+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-08T14:20:43.5153019+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-08T14:20:43.5241519+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-08T14:20:43.5337283+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-08T14:20:43.5422272+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-08T14:20:43.5513111+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-08T14:20:43.5617861+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:20:43.5713048+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:20:43.5794216+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:20:44.2901096+07:00 0HLI59AP1CSCG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/   (ca22a1cb)
+2018-11-08T14:20:44.5608087+07:00 0HLI59AP1CSCG:00000001 [INF] Executing action method "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:20:47.6724020+07:00 0HLI59AP1CSCH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T14:20:47.7023898+07:00 0HLI59AP1CSCH:00000001 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:20:47.7491862+07:00 0HLI59AP1CSCG:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T14:20:48.0890985+07:00 0HLI59AP1CSCH:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T14:20:48.2449243+07:00 0HLI59AP1CSCI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/css/bootstrap.min.css   (ca22a1cb)
+2018-11-08T14:20:48.2477149+07:00 0HLI59AP1CSCJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/font-awesome/css/font-awesome.min.css   (ca22a1cb)
+2018-11-08T14:20:48.2705329+07:00 0HLI59AP1CSCH:00000001 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 495.7441ms (afa2e885)
+2018-11-08T14:20:48.3077596+07:00 0HLI59AP1CSCH:00000001 [INF] Request finished in 640.1891ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:20:48.3333993+07:00 0HLI59AP1CSCJ:00000001 [INF] Sending file. Request path: '"/node_modules/font-awesome/css/font-awesome.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\font-awesome\css\font-awesome.min.css"' (27b0a520)
+2018-11-08T14:20:48.3357907+07:00 0HLI59AP1CSCI:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2018-11-08T14:20:48.3644590+07:00 0HLI59AP1CSCJ:00000001 [INF] Request finished in 162.8948ms 200 text/css (791a596a)
+2018-11-08T14:20:48.3947819+07:00 0HLI59AP1CSCI:00000001 [INF] Request finished in 194.827ms 200 text/css (791a596a)
+2018-11-08T14:20:48.5592260+07:00 0HLI59AP1CSCG:00000001 [INF] Executed action "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" in 4011.201ms (afa2e885)
+2018-11-08T14:20:48.6139792+07:00 0HLI59AP1CSCJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/css/site.css   (ca22a1cb)
+2018-11-08T14:20:48.6381294+07:00 0HLI59AP1CSCG:00000001 [INF] Request finished in 4321.0919ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:20:48.6691264+07:00 0HLI59AP1CSCH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/images/banner1.svg   (ca22a1cb)
+2018-11-08T14:20:48.6833835+07:00 0HLI59AP1CSCI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-11-08T14:20:48.6936221+07:00 0HLI59AP1CSCH:00000002 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\images\banner1.svg"' (27b0a520)
+2018-11-08T14:20:48.7432858+07:00 0HLI59AP1CSCJ:00000002 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\css\site.css"' (27b0a520)
+2018-11-08T14:20:48.7458154+07:00 0HLI59AP1CSCL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-11-08T14:20:48.8089937+07:00 0HLI59AP1CSCK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-11-08T14:20:48.8139350+07:00 0HLI59AP1CSCG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/images/banner2.svg   (ca22a1cb)
+2018-11-08T14:20:48.8370383+07:00 0HLI59AP1CSCI:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-11-08T14:20:48.9358282+07:00 0HLI59AP1CSCH:00000002 [INF] Request finished in 162.9799ms 200 image/svg+xml (791a596a)
+2018-11-08T14:20:48.9386305+07:00 0HLI59AP1CSCL:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-11-08T14:20:48.9640163+07:00 0HLI59AP1CSCG:00000002 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\images\banner2.svg"' (27b0a520)
+2018-11-08T14:20:48.9949327+07:00 0HLI59AP1CSCJ:00000002 [INF] Request finished in 279.6948ms 200 text/css (791a596a)
+2018-11-08T14:20:49.0189584+07:00 0HLI59AP1CSCK:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-11-08T14:20:49.0742427+07:00 0HLI59AP1CSCH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-11-08T14:20:49.0783216+07:00 0HLI59AP1CSCJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/images/banner3.svg   (ca22a1cb)
+2018-11-08T14:20:49.1508388+07:00 0HLI59AP1CSCH:00000003 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\js\site.js"' (27b0a520)
+2018-11-08T14:20:49.1882476+07:00 0HLI59AP1CSCG:00000002 [INF] Request finished in 356.8274ms 200 image/svg+xml (791a596a)
+2018-11-08T14:20:49.2779243+07:00 0HLI59AP1CSCH:00000003 [INF] Request finished in 221.1724ms 200 application/javascript (791a596a)
+2018-11-08T14:20:49.3344117+07:00 0HLI59AP1CSCJ:00000003 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\images\banner3.svg"' (27b0a520)
+2018-11-08T14:20:49.3375844+07:00 0HLI59AP1CSCI:00000002 [INF] Request finished in 682.3874ms 200 text/css (791a596a)
+2018-11-08T14:20:49.3398656+07:00 0HLI59AP1CSCL:00000001 [INF] Request finished in 639.6104ms 200 application/javascript (791a596a)
+2018-11-08T14:20:49.3634462+07:00 0HLI59AP1CSCG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/images/banner4.svg   (ca22a1cb)
+2018-11-08T14:20:49.3864535+07:00 0HLI59AP1CSCK:00000001 [INF] Request finished in 544.8052ms 200 application/javascript (791a596a)
+2018-11-08T14:20:49.4408324+07:00 0HLI59AP1CSCG:00000003 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\images\banner4.svg"' (27b0a520)
+2018-11-08T14:20:49.4473441+07:00 0HLI59AP1CSCJ:00000003 [INF] Request finished in 418.8017ms 200 image/svg+xml (791a596a)
+2018-11-08T14:20:49.5053144+07:00 0HLI59AP1CSCG:00000003 [INF] Request finished in 210.8196ms 200 image/svg+xml (791a596a)
+2018-11-08T14:20:49.5776931+07:00 0HLI59AP1CSCI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-11-08T14:20:49.6032923+07:00 0HLI59AP1CSCG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T14:20:49.6101611+07:00 0HLI59AP1CSCI:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-11-08T14:20:49.6184170+07:00 0HLI59AP1CSCG:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:20:49.6249366+07:00 0HLI59AP1CSCG:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T14:20:49.6344069+07:00 0HLI59AP1CSCG:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 16.9942ms (afa2e885)
+2018-11-08T14:20:49.7147657+07:00 0HLI59AP1CSCL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin-side/css/custom.min.css   (ca22a1cb)
+2018-11-08T14:20:49.7182593+07:00 0HLI59AP1CSCH:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/notifyjs/dist/notify.js   (ca22a1cb)
+2018-11-08T14:20:49.7421137+07:00 0HLI59AP1CSCI:00000003 [INF] Request finished in 157.3488ms 200 font/woff2 (791a596a)
+2018-11-08T14:20:49.8124679+07:00 0HLI59AP1CSCG:00000004 [INF] Request finished in 81.2845ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:20:49.8574248+07:00 0HLI59AP1CSCK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery/dist/jquery.min.js   (ca22a1cb)
+2018-11-08T14:20:49.8875970+07:00 0HLI59AP1CSCK:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery\dist\jquery.min.js"' (27b0a520)
+2018-11-08T14:20:49.9164275+07:00 0HLI59AP1CSCJ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/animate.css/animate.min.css   (ca22a1cb)
+2018-11-08T14:20:49.9396303+07:00 0HLI59AP1CSCH:00000004 [INF] Sending file. Request path: '"/node_modules/notifyjs/dist/notify.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\notifyjs\dist\notify.js"' (27b0a520)
+2018-11-08T14:20:49.9653071+07:00 0HLI59AP1CSCM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/dist/jquery.validate.min.js   (ca22a1cb)
+2018-11-08T14:20:49.9684417+07:00 0HLI59AP1CSCL:00000002 [INF] Sending file. Request path: '"/admin-side/css/custom.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\admin-side\css\custom.min.css"' (27b0a520)
+2018-11-08T14:20:50.0038856+07:00 0HLI59AP1CSCM:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js"' (27b0a520)
+2018-11-08T14:20:50.0562621+07:00 0HLI59AP1CSCG:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/nprogress/nprogress.css   (ca22a1cb)
+2018-11-08T14:20:50.0874680+07:00 0HLI59AP1CSCJ:00000004 [INF] Sending file. Request path: '"/node_modules/animate.css/animate.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\animate.css\animate.min.css"' (27b0a520)
+2018-11-08T14:20:50.1373037+07:00 0HLI59AP1CSCL:00000002 [INF] Request finished in 339.0301ms 200 text/css (791a596a)
+2018-11-08T14:20:50.1432522+07:00 0HLI59AP1CSCG:00000005 [INF] Sending file. Request path: '"/node_modules/nprogress/nprogress.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\nprogress\nprogress.css"' (27b0a520)
+2018-11-08T14:20:50.1742008+07:00 0HLI59AP1CSCK:00000002 [INF] Request finished in 371.7318ms 200 application/javascript (791a596a)
+2018-11-08T14:20:50.2072228+07:00 0HLI59AP1CSCJ:00000004 [INF] Request finished in 490.7013ms 200 text/css (791a596a)
+2018-11-08T14:20:50.2889816+07:00 0HLI59AP1CSCM:00000001 [INF] Request finished in 345.5406ms 200 application/javascript (791a596a)
+2018-11-08T14:20:50.3220856+07:00 0HLI59AP1CSCK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/dist/additional-methods.min.js   (ca22a1cb)
+2018-11-08T14:20:50.3774039+07:00 0HLI59AP1CSCH:00000004 [INF] Request finished in 401.1759ms 200 application/javascript (791a596a)
+2018-11-08T14:20:50.4062395+07:00 0HLI59AP1CSCG:00000005 [INF] Request finished in 209.6064ms 200 text/css (791a596a)
+2018-11-08T14:20:50.4836287+07:00 0HLI59AP1CSCL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js   (ca22a1cb)
+2018-11-08T14:20:50.4855039+07:00 0HLI59AP1CSCJ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:10454/app/controllers/login/index.js   (ca22a1cb)
+2018-11-08T14:20:50.6110441+07:00 0HLI59AP1CSCK:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation\dist\additional-methods.min.js"' (27b0a520)
+2018-11-08T14:20:50.6353385+07:00 0HLI59AP1CSCH:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-11-08T14:20:50.6631245+07:00 0HLI59AP1CSCG:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-11-08T14:20:50.6953767+07:00 0HLI59AP1CSCM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/app/shared/dkteam.js   (ca22a1cb)
+2018-11-08T14:20:50.6990869+07:00 0HLI59AP1CSCG:00000006 [INF] Sending file. Request path: '"/node_modules/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-11-08T14:20:50.7234150+07:00 0HLI59AP1CSCL:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js"' (27b0a520)
+2018-11-08T14:20:50.7273541+07:00 0HLI59AP1CSCH:00000005 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-11-08T14:20:50.7504057+07:00 0HLI59AP1CSCJ:00000005 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-11-08T14:20:50.7809026+07:00 0HLI59AP1CSCG:00000006 [INF] Request finished in 224.5217ms 200 font/woff2 (791a596a)
+2018-11-08T14:20:50.7944980+07:00 0HLI59AP1CSCL:00000003 [INF] Request finished in 605.1201ms 200 application/javascript (791a596a)
+2018-11-08T14:20:50.8184749+07:00 0HLI59AP1CSCK:00000003 [INF] Request finished in 543.3765ms 200 application/javascript (791a596a)
+2018-11-08T14:20:50.8469648+07:00 0HLI59AP1CSCH:00000005 [INF] Request finished in 135.7736ms 200 application/javascript (791a596a)
+2018-11-08T14:20:50.8984071+07:00 0HLI59AP1CSCJ:00000005 [INF] Request finished in 488.5665ms 200 application/javascript (791a596a)
+2018-11-08T14:20:50.9225688+07:00 0HLI59AP1CSCM:00000002 [INF] Sending file. Request path: '"/app/shared/dkteam.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\app\shared\dkteam.js"' (27b0a520)
+2018-11-08T14:20:50.9653732+07:00 0HLI59AP1CSCM:00000002 [INF] Request finished in 554.9974ms 200 application/javascript (791a596a)
+2018-11-08T14:20:53.4355508+07:00 0HLI59AP1CSCM:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T14:20:53.5337080+07:00 0HLI59AP1CSCM:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:20:53.5700225+07:00 0HLI59AP1CSCM:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:20:53.6550859+07:00 0HLI59AP1CSCM:00000003 [INF] Executed DbCommand ("44"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-08T14:20:53.7857941+07:00 0HLI59AP1CSCM:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-08T14:20:53.8299809+07:00 0HLI59AP1CSCM:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T14:20:53.8485243+07:00 0HLI59AP1CSCM:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-08T14:20:53.8774767+07:00 0HLI59AP1CSCM:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-08T14:20:53.8866763+07:00 0HLI59AP1CSCM:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T14:20:53.9017899+07:00 0HLI59AP1CSCM:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-08T14:20:53.9123965+07:00 0HLI59AP1CSCM:00000003 [INF] User logged in. (fdce0db4)
+2018-11-08T14:20:53.9273031+07:00 0HLI59AP1CSCM:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-08T14:20:53.9807905+07:00 0HLI59AP1CSCM:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 496.4484ms (afa2e885)
+2018-11-08T14:20:53.9883832+07:00 0HLI59AP1CSCM:00000003 [INF] Request finished in 553.6562ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-08T14:20:53.9976064+07:00 0HLI59AP1CSCM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T14:20:54.0112872+07:00 0HLI59AP1CSCM:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:20:54.0197210+07:00 0HLI59AP1CSCM:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:20:54.2046620+07:00 0HLI59AP1CSCM:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T14:21:07.4304809+07:00 0HLI59AP1CSCM:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:21:07.5232704+07:00 0HLI59AP1CSCM:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T14:21:16.3898870+07:00 0HLI59AP1CSCM:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 22369.9625ms (afa2e885)
+2018-11-08T14:21:16.6117519+07:00 0HLI59AP1CSCM:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore._Areas_Admin_Views_Shared_Components_SideBar_Default_cshtml.<ExecuteAsync>d__0.MoveNext() in D:\16. WEB\DKCoreShop\DKCoreShop\Areas\Admin\Views\Shared\Components\SideBar\Default.cshtml:line 6
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult.<ExecuteAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__28_6>d.MoveNext() in D:\16. WEB\DKCoreShop\DKCoreShop\Areas\Admin\Views\Shared\_Layout.cshtml:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-11-08T14:21:16.7760717+07:00 0HLI59AP1CSCM:00000004 [INF] Request finished in 22777.9868ms 500 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:27:54.1218231+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:27:54.3486560+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:27:54.3711552+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:27:54.3823133+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:27:54.4002853+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-08T14:27:54.4306456+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-08T14:27:54.4411512+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-08T14:27:54.4508546+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-08T14:27:54.4631955+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-08T14:27:54.4754564+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-08T14:27:54.4866149+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-08T14:27:54.4989198+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:27:54.5132935+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:27:54.5238249+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:27:55.1339375+07:00 0HLI59EPFDTGL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/   (ca22a1cb)
+2018-11-08T14:27:55.2080167+07:00 0HLI59EPFDTGL:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:27:55.4218660+07:00 0HLI59EPFDTGL:00000001 [INF] Executing action method "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:27:58.1660729+07:00 0HLI59EPFDTGL:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T14:27:58.7939930+07:00 0HLI59EPFDTGL:00000001 [INF] Executed action "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" in 3377.3569ms (afa2e885)
+2018-11-08T14:27:58.8062533+07:00 0HLI59EPFDTGL:00000001 [INF] Request finished in 3707.9576ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:27:58.8372665+07:00 0HLI59EPFDTGL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-11-08T14:27:58.8493895+07:00 0HLI59EPFDTGL:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-11-08T14:27:58.8605123+07:00 0HLI59EPFDTGL:00000002 [INF] Request finished in 23.9624ms 200 font/woff2 (791a596a)
+2018-11-08T14:28:02.7819413+07:00 0HLI59EPFDTGL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T14:28:02.7921781+07:00 0HLI59EPFDTGL:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:28:02.8054216+07:00 0HLI59EPFDTGL:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:28:03.0882046+07:00 0HLI59EPFDTGL:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T14:28:03.1347109+07:00 0HLI59EPFDTGL:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 330.9611ms (afa2e885)
+2018-11-08T14:28:03.1425531+07:00 0HLI59EPFDTGL:00000003 [INF] Request finished in 362.2225ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:28:03.3811393+07:00 0HLI59EPFDTGL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T14:28:03.3879342+07:00 0HLI59EPFDTGL:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:28:03.3943230+07:00 0HLI59EPFDTGL:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:28:03.4006724+07:00 0HLI59EPFDTGL:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T14:28:03.4090910+07:00 0HLI59EPFDTGL:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 13.5034ms (afa2e885)
+2018-11-08T14:28:03.4160498+07:00 0HLI59EPFDTGL:00000004 [INF] Request finished in 35.1755ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:28:07.5396734+07:00 0HLI59EPFDTGL:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T14:28:07.5460951+07:00 0HLI59EPFDTGL:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:28:07.6771350+07:00 0HLI59EPFDTGL:00000005 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:28:07.7032272+07:00 0HLI59EPFDTGL:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:28:07.7750984+07:00 0HLI59EPFDTGL:00000005 [INF] Executed DbCommand ("31"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-08T14:28:07.9148045+07:00 0HLI59EPFDTGL:00000005 [INF] Executed DbCommand ("9"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-08T14:28:07.9583456+07:00 0HLI59EPFDTGL:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T14:28:07.9821936+07:00 0HLI59EPFDTGL:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-08T14:28:08.0105857+07:00 0HLI59EPFDTGL:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-08T14:28:08.0199906+07:00 0HLI59EPFDTGL:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T14:28:08.0429927+07:00 0HLI59EPFDTGL:00000005 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-08T14:28:08.0524745+07:00 0HLI59EPFDTGL:00000005 [INF] User logged in. (fdce0db4)
+2018-11-08T14:28:08.0664628+07:00 0HLI59EPFDTGL:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-08T14:28:08.1212878+07:00 0HLI59EPFDTGL:00000005 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 528.0023ms (afa2e885)
+2018-11-08T14:28:08.1285989+07:00 0HLI59EPFDTGL:00000005 [INF] Request finished in 591.2922ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-08T14:28:08.1391062+07:00 0HLI59EPFDTGL:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T14:28:08.1456397+07:00 0HLI59EPFDTGL:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:28:08.1573077+07:00 0HLI59EPFDTGL:00000006 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:28:08.3742047+07:00 0HLI59EPFDTGL:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T14:28:15.4020818+07:00 0HLI59EPFDTGL:00000006 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:28:15.4537801+07:00 0HLI59EPFDTGL:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T14:28:24.5187124+07:00 0HLI59EPFDTGL:00000006 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 16361.4095ms (afa2e885)
+2018-11-08T14:28:24.6588735+07:00 0HLI59EPFDTGL:00000006 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore._Areas_Admin_Views_Shared_Components_SideBar_Default_cshtml.<ExecuteAsync>d__0.MoveNext() in D:\16. WEB\DKCoreShop\DKCoreShop\Areas\Admin\Views\Shared\Components\SideBar\Default.cshtml:line 6
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult.<ExecuteAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__28_6>d.MoveNext() in D:\16. WEB\DKCoreShop\DKCoreShop\Areas\Admin\Views\Shared\_Layout.cshtml:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-11-08T14:28:24.7994548+07:00 0HLI59EPFDTGL:00000006 [INF] Request finished in 16660.9676ms 500 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:29:37.3071371+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:29:37.5194237+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:29:37.5406200+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:29:37.5512955+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:29:37.5688126+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-08T14:29:37.5925752+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-08T14:29:37.6020144+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-08T14:29:37.6119792+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-08T14:29:37.6224739+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-08T14:29:37.6331626+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-08T14:29:37.6439341+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-08T14:29:37.6589369+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:29:37.6690681+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:29:37.6801589+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:29:38.6469740+07:00 0HLI59FOAMB4C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/   (ca22a1cb)
+2018-11-08T14:29:38.7013468+07:00 0HLI59FOAMB4C:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:29:38.9147255+07:00 0HLI59FOAMB4C:00000001 [INF] Executing action method "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:29:41.6149808+07:00 0HLI59FOAMB4C:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T14:29:42.1981071+07:00 0HLI59FOAMB4C:00000001 [INF] Executed action "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" in 3292.6283ms (afa2e885)
+2018-11-08T14:29:42.2123483+07:00 0HLI59FOAMB4C:00000001 [INF] Request finished in 3602.4866ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:29:51.1710116+07:00 0HLI59FOAMB4C:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T14:29:51.1848196+07:00 0HLI59FOAMB4C:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:29:51.2001305+07:00 0HLI59FOAMB4C:00000002 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:29:51.4726703+07:00 0HLI59FOAMB4C:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T14:29:51.5176870+07:00 0HLI59FOAMB4C:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 319.5684ms (afa2e885)
+2018-11-08T14:29:51.5287433+07:00 0HLI59FOAMB4C:00000002 [INF] Request finished in 358.7084ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:29:52.0753198+07:00 0HLI59FOAMB4C:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T14:29:52.0826788+07:00 0HLI59FOAMB4C:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:29:52.0904780+07:00 0HLI59FOAMB4C:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:29:52.0977034+07:00 0HLI59FOAMB4C:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T14:29:52.1050537+07:00 0HLI59FOAMB4C:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 15.4067ms (afa2e885)
+2018-11-08T14:29:52.1132653+07:00 0HLI59FOAMB4C:00000003 [INF] Request finished in 37.4784ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:29:53.9630149+07:00 0HLI59FOAMB4C:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T14:29:53.9699224+07:00 0HLI59FOAMB4C:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:29:54.0836188+07:00 0HLI59FOAMB4C:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:29:54.1148274+07:00 0HLI59FOAMB4C:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:29:54.1868895+07:00 0HLI59FOAMB4C:00000004 [INF] Executed DbCommand ("32"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-08T14:29:54.3237215+07:00 0HLI59FOAMB4C:00000004 [INF] Executed DbCommand ("9"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-08T14:29:54.3699498+07:00 0HLI59FOAMB4C:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T14:29:54.3891668+07:00 0HLI59FOAMB4C:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-08T14:29:54.4170128+07:00 0HLI59FOAMB4C:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-08T14:29:54.4268490+07:00 0HLI59FOAMB4C:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T14:29:54.4529668+07:00 0HLI59FOAMB4C:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-08T14:29:54.4646052+07:00 0HLI59FOAMB4C:00000004 [INF] User logged in. (fdce0db4)
+2018-11-08T14:29:54.4804433+07:00 0HLI59FOAMB4C:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-08T14:29:54.5360886+07:00 0HLI59FOAMB4C:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 509.1555ms (afa2e885)
+2018-11-08T14:29:54.5451674+07:00 0HLI59FOAMB4C:00000004 [INF] Request finished in 580.8933ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-08T14:29:54.5560258+07:00 0HLI59FOAMB4C:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T14:29:54.5636097+07:00 0HLI59FOAMB4C:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:29:54.5725984+07:00 0HLI59FOAMB4C:00000005 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:29:54.7366002+07:00 0HLI59FOAMB4C:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T14:29:58.7790511+07:00 0HLI59FOAMB4C:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:29:58.8861761+07:00 0HLI59FOAMB4C:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T14:30:14.5306968+07:00 0HLI59FOAMB4C:00000005 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 19958.365ms (afa2e885)
+2018-11-08T14:30:14.5439437+07:00 0HLI59FOAMB4C:00000005 [INF] Request finished in 19983.5134ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:30:14.5973121+07:00 0HLI59FOAMB4F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin-side/images/img.jpg   (ca22a1cb)
+2018-11-08T14:30:14.6983978+07:00 0HLI59FOAMB4J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/chart.js/dist/Chart.min.js   (ca22a1cb)
+2018-11-08T14:30:14.7068771+07:00 0HLI59FOAMB4I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/nprogress/nprogress.js   (ca22a1cb)
+2018-11-08T14:30:14.7182049+07:00 0HLI59FOAMB4C:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-11-08T14:30:14.7242719+07:00 0HLI59FOAMB4H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-11-08T14:30:14.7311060+07:00 0HLI59FOAMB4G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/js/bootstrap.min.js   (ca22a1cb)
+2018-11-08T14:30:14.7638759+07:00 0HLI59FOAMB4F:00000001 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-11-08T14:30:14.7658849+07:00 0HLI59FOAMB4H:00000001 [INF] Sending file. Request path: '"/node_modules/fastclick/lib/fastclick.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\fastclick\lib\fastclick.js"' (27b0a520)
+2018-11-08T14:30:14.7924794+07:00 0HLI59FOAMB4C:00000006 [INF] Sending file. Request path: '"/node_modules/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-11-08T14:30:14.7955174+07:00 0HLI59FOAMB4J:00000001 [INF] Sending file. Request path: '"/node_modules/chart.js/dist/Chart.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\chart.js\dist\Chart.min.js"' (27b0a520)
+2018-11-08T14:30:14.8004298+07:00 0HLI59FOAMB4G:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js"' (27b0a520)
+2018-11-08T14:30:14.8042183+07:00 0HLI59FOAMB4I:00000001 [INF] Sending file. Request path: '"/node_modules/nprogress/nprogress.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\nprogress\nprogress.js"' (27b0a520)
+2018-11-08T14:30:14.8556042+07:00 0HLI59FOAMB4G:00000001 [INF] Request finished in 275.1232ms 200 application/javascript (791a596a)
+2018-11-08T14:30:14.8678548+07:00 0HLI59FOAMB4G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/jquery-sparkline/jquery.sparkline.min.js   (ca22a1cb)
+2018-11-08T14:30:14.9918019+07:00 0HLI59FOAMB4G:00000002 [INF] Sending file. Request path: '"/node_modules/jquery-sparkline/jquery.sparkline.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\jquery-sparkline\jquery.sparkline.min.js"' (27b0a520)
+2018-11-08T14:30:15.0430359+07:00 0HLI59FOAMB4C:00000006 [INF] Request finished in 392.9203ms 200 text/css (791a596a)
+2018-11-08T14:30:15.0749684+07:00 0HLI59FOAMB4I:00000001 [INF] Request finished in 392.4186ms 200 application/javascript (791a596a)
+2018-11-08T14:30:15.0991427+07:00 0HLI59FOAMB4H:00000001 [INF] Request finished in 391.4218ms 200 application/javascript (791a596a)
+2018-11-08T14:30:15.1764459+07:00 0HLI59FOAMB4G:00000002 [INF] Request finished in 263.8012ms 200 application/javascript (791a596a)
+2018-11-08T14:30:15.2316808+07:00 0HLI59FOAMB4H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/moment/min/moment.min.js   (ca22a1cb)
+2018-11-08T14:30:15.2348562+07:00 0HLI59FOAMB4I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin-side/js/custom.min.js   (ca22a1cb)
+2018-11-08T14:30:15.2977196+07:00 0HLI59FOAMB4F:00000001 [INF] Request finished in 423.3881ms 200 image/jpeg (791a596a)
+2018-11-08T14:30:15.3270300+07:00 0HLI59FOAMB4J:00000001 [INF] Request finished in 637.4429ms 200 application/javascript (791a596a)
+2018-11-08T14:30:15.3362737+07:00 0HLI59FOAMB4C:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/bootbox/bootbox.js   (ca22a1cb)
+2018-11-08T14:30:15.3805504+07:00 0HLI59FOAMB4H:00000002 [INF] Sending file. Request path: '"/node_modules/moment/min/moment.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\moment\min\moment.min.js"' (27b0a520)
+2018-11-08T14:30:15.4298025+07:00 0HLI59FOAMB4I:00000002 [INF] Sending file. Request path: '"/admin-side/js/custom.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\admin-side\js\custom.min.js"' (27b0a520)
+2018-11-08T14:30:15.4324715+07:00 0HLI59FOAMB4C:00000007 [INF] Sending file. Request path: '"/node_modules/bootbox/bootbox.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\bootbox\bootbox.js"' (27b0a520)
+2018-11-08T14:30:15.4853808+07:00 0HLI59FOAMB4F:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-11-08T14:30:15.5098099+07:00 0HLI59FOAMB4H:00000002 [INF] Request finished in 260.3242ms 200 application/javascript (791a596a)
+2018-11-08T14:30:15.5259713+07:00 0HLI59FOAMB4F:00000002 [INF] Sending file. Request path: '"/node_modules/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-11-08T14:30:15.5785317+07:00 0HLI59FOAMB4I:00000002 [INF] Request finished in 423.4312ms 200 application/javascript (791a596a)
+2018-11-08T14:30:15.5820557+07:00 0HLI59FOAMB4C:00000007 [INF] Request finished in 305.5116ms 200 application/javascript (791a596a)
+2018-11-08T14:30:15.6161877+07:00 0HLI59FOAMB4F:00000002 [INF] Request finished in 252.9485ms 200 application/javascript (791a596a)
+2018-11-08T14:32:18.0671012+07:00 0HLI59FOAMB4F:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T14:32:18.0739088+07:00 0HLI59FOAMB4F:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:32:18.0814213+07:00 0HLI59FOAMB4F:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:32:18.0878955+07:00 0HLI59FOAMB4F:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T14:32:20.0726126+07:00 0HLI59FOAMB4F:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:32:20.0953343+07:00 0HLI59FOAMB4F:00000003 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T14:32:20.2435409+07:00 0HLI59FOAMB4F:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 2161.9412ms (afa2e885)
+2018-11-08T14:32:20.2505839+07:00 0HLI59FOAMB4F:00000003 [INF] Request finished in 2183.5454ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:32:20.4453879+07:00 0HLI59FOAMB4F:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/favicon.ico   (ca22a1cb)
+2018-11-08T14:32:20.4513209+07:00 0HLI59FOAMB4F:00000004 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2018-11-08T14:32:20.4785080+07:00 0HLI59FOAMB4F:00000004 [INF] Request finished in 32.5344ms 200 image/x-icon (791a596a)
+2018-11-08T14:54:24.3076790+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:54:24.5209970+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:54:24.5419784+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:54:24.5526062+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:54:24.5711029+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-08T14:54:24.5959924+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-08T14:54:24.6065881+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-08T14:54:24.6170887+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-08T14:54:24.6267618+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-08T14:54:24.6366556+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-08T14:54:24.6463618+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-08T14:54:24.6577698+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:54:24.6689938+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:54:24.6791712+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T14:54:25.3436071+07:00 0HLI59TJD2I21:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/   (ca22a1cb)
+2018-11-08T14:54:25.4061341+07:00 0HLI59TJD2I21:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:54:25.5969122+07:00 0HLI59TJD2I21:00000001 [INF] Executing action method "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:54:28.4381970+07:00 0HLI59TJD2I22:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T14:54:28.4512057+07:00 0HLI59TJD2I22:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:54:28.4722779+07:00 0HLI59TJD2I22:00000001 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:54:28.5731251+07:00 0HLI59TJD2I21:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T14:54:28.9962376+07:00 0HLI59TJD2I22:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T14:54:29.1236666+07:00 0HLI59TJD2I22:00000001 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 646.1689ms (afa2e885)
+2018-11-08T14:54:29.1375332+07:00 0HLI59TJD2I22:00000001 [INF] Request finished in 720.101ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:54:29.3360442+07:00 0HLI59TJD2I22:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T14:54:29.3468833+07:00 0HLI59TJD2I22:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:54:29.3565841+07:00 0HLI59TJD2I22:00000002 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:54:29.3649188+07:00 0HLI59TJD2I22:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T14:54:29.3750294+07:00 0HLI59TJD2I22:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 18.7816ms (afa2e885)
+2018-11-08T14:54:29.3860403+07:00 0HLI59TJD2I22:00000002 [INF] Request finished in 49.4997ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:54:29.4087164+07:00 0HLI59TJD2I21:00000001 [INF] Executed action "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" in 3821.4043ms (afa2e885)
+2018-11-08T14:54:29.4168585+07:00 0HLI59TJD2I21:00000001 [INF] Request finished in 4099.0057ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T14:54:31.0735550+07:00 0HLI59TJD2I22:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T14:54:31.0813898+07:00 0HLI59TJD2I22:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:54:31.1970834+07:00 0HLI59TJD2I22:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:54:31.2259869+07:00 0HLI59TJD2I22:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:54:31.3102041+07:00 0HLI59TJD2I22:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-08T14:54:31.4754126+07:00 0HLI59TJD2I22:00000003 [INF] Executed DbCommand ("9"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-08T14:54:31.5282317+07:00 0HLI59TJD2I22:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T14:54:31.5505625+07:00 0HLI59TJD2I22:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-08T14:54:31.5834157+07:00 0HLI59TJD2I22:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-08T14:54:31.5935861+07:00 0HLI59TJD2I22:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T14:54:31.6184331+07:00 0HLI59TJD2I22:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-08T14:54:31.6302634+07:00 0HLI59TJD2I22:00000003 [INF] User logged in. (fdce0db4)
+2018-11-08T14:54:31.6450138+07:00 0HLI59TJD2I22:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-08T14:54:31.7055658+07:00 0HLI59TJD2I22:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 568.6753ms (afa2e885)
+2018-11-08T14:54:31.7157784+07:00 0HLI59TJD2I22:00000003 [INF] Request finished in 641.572ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-08T14:54:31.7305431+07:00 0HLI59TJD2I22:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T14:54:31.7383468+07:00 0HLI59TJD2I22:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T14:54:31.7481025+07:00 0HLI59TJD2I22:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T14:54:31.9440057+07:00 0HLI59TJD2I22:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T14:54:32.2663891+07:00 0HLI59TJD2I22:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T14:54:32.3247548+07:00 0HLI59TJD2I22:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T14:54:32.6810510+07:00 0HLI59TJD2I22:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 931.5535ms (afa2e885)
+2018-11-08T14:54:32.6915220+07:00 0HLI59TJD2I22:00000004 [INF] Request finished in 961.3327ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:05:22.2963074+07:00 0HLI59TJD2I24:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:05:22.3088781+07:00 0HLI59TJD2I24:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:05:22.3172780+07:00 0HLI59TJD2I24:00000001 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:05:22.3267601+07:00 0HLI59TJD2I24:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:05:22.5345478+07:00 0HLI59TJD2I24:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:05:22.5596211+07:00 0HLI59TJD2I24:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:05:22.7366880+07:00 0HLI59TJD2I24:00000001 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 419.7768ms (afa2e885)
+2018-11-08T15:05:22.7447707+07:00 0HLI59TJD2I24:00000001 [INF] Request finished in 464.825ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:05:22.8005449+07:00 0HLI59TJD2I25:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/font-awesome/css/font-awesome.min.css   (ca22a1cb)
+2018-11-08T15:05:22.8402515+07:00 0HLI59TJD2I24:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/css/bootstrap.min.css   (ca22a1cb)
+2018-11-08T15:05:22.8458171+07:00 0HLI59TJD2I28:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin-side/css/custom.min.css   (ca22a1cb)
+2018-11-08T15:05:22.8929305+07:00 0HLI59TJD2I26:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-11-08T15:05:22.8956419+07:00 0HLI59TJD2I29:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin-side/images/img.jpg   (ca22a1cb)
+2018-11-08T15:05:22.8991711+07:00 0HLI59TJD2I27:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/nprogress/nprogress.css   (ca22a1cb)
+2018-11-08T15:05:22.9999078+07:00 0HLI59TJD2I28:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\admin-side\css\custom.min.css"' (27b0a520)
+2018-11-08T15:05:23.0094072+07:00 0HLI59TJD2I24:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2018-11-08T15:05:23.0156071+07:00 0HLI59TJD2I25:00000001 [INF] Sending file. Request path: '"/node_modules/font-awesome/css/font-awesome.min.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\font-awesome\css\font-awesome.min.css"' (27b0a520)
+2018-11-08T15:05:23.0222631+07:00 0HLI59TJD2I27:00000001 [INF] Sending file. Request path: '"/node_modules/nprogress/nprogress.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\nprogress\nprogress.css"' (27b0a520)
+2018-11-08T15:05:23.0283192+07:00 0HLI59TJD2I26:00000001 [INF] Sending file. Request path: '"/node_modules/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-11-08T15:05:23.0654865+07:00 0HLI59TJD2I29:00000001 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-11-08T15:05:23.1515099+07:00 0HLI59TJD2I26:00000001 [INF] Request finished in 295.3234ms 200 text/css (791a596a)
+2018-11-08T15:05:23.2274742+07:00 0HLI59TJD2I28:00000001 [INF] Request finished in 289.7107ms 200 text/css (791a596a)
+2018-11-08T15:05:23.2934263+07:00 0HLI59TJD2I29:00000001 [INF] Request finished in 290.8508ms 200 image/jpeg (791a596a)
+2018-11-08T15:05:23.3255408+07:00 0HLI59TJD2I27:00000001 [INF] Request finished in 343.7237ms 200 text/css (791a596a)
+2018-11-08T15:05:23.3383137+07:00 0HLI59TJD2I25:00000001 [INF] Request finished in 373.6224ms 200 text/css (791a596a)
+2018-11-08T15:05:23.3425080+07:00 0HLI59TJD2I26:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/js/bootstrap.min.js   (ca22a1cb)
+2018-11-08T15:05:23.3927434+07:00 0HLI59TJD2I24:00000002 [INF] Request finished in 476.9652ms 200 text/css (791a596a)
+2018-11-08T15:05:23.5128144+07:00 0HLI59TJD2I28:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/nprogress/nprogress.js   (ca22a1cb)
+2018-11-08T15:05:23.6052698+07:00 0HLI59TJD2I28:00000002 [INF] Sending file. Request path: '"/node_modules/nprogress/nprogress.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\nprogress\nprogress.js"' (27b0a520)
+2018-11-08T15:05:23.6101656+07:00 0HLI59TJD2I26:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js"' (27b0a520)
+2018-11-08T15:05:23.6205691+07:00 0HLI59TJD2I29:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/chart.js/dist/Chart.min.js   (ca22a1cb)
+2018-11-08T15:05:23.6451531+07:00 0HLI59TJD2I24:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/jquery-sparkline/jquery.sparkline.min.js   (ca22a1cb)
+2018-11-08T15:05:23.6970982+07:00 0HLI59TJD2I25:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-11-08T15:05:23.6987486+07:00 0HLI59TJD2I27:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/jquery/dist/jquery.min.js   (ca22a1cb)
+2018-11-08T15:05:23.7091599+07:00 0HLI59TJD2I29:00000002 [INF] Sending file. Request path: '"/node_modules/chart.js/dist/Chart.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\chart.js\dist\Chart.min.js"' (27b0a520)
+2018-11-08T15:05:23.7369335+07:00 0HLI59TJD2I25:00000002 [INF] Sending file. Request path: '"/node_modules/fastclick/lib/fastclick.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\fastclick\lib\fastclick.js"' (27b0a520)
+2018-11-08T15:05:23.7403787+07:00 0HLI59TJD2I24:00000003 [INF] Sending file. Request path: '"/node_modules/jquery-sparkline/jquery.sparkline.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\jquery-sparkline\jquery.sparkline.min.js"' (27b0a520)
+2018-11-08T15:05:23.7735549+07:00 0HLI59TJD2I28:00000002 [INF] Request finished in 428.8173ms 200 application/javascript (791a596a)
+2018-11-08T15:05:23.8253344+07:00 0HLI59TJD2I26:00000002 [INF] Request finished in 518.5317ms 200 application/javascript (791a596a)
+2018-11-08T15:05:23.8514730+07:00 0HLI59TJD2I27:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\jquery\dist\jquery.min.js"' (27b0a520)
+2018-11-08T15:05:23.9198981+07:00 0HLI59TJD2I25:00000002 [INF] Request finished in 397.5857ms 200 application/javascript (791a596a)
+2018-11-08T15:05:23.9540590+07:00 0HLI59TJD2I24:00000003 [INF] Request finished in 369.8985ms 200 application/javascript (791a596a)
+2018-11-08T15:05:23.9578807+07:00 0HLI59TJD2I28:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-11-08T15:05:23.9714484+07:00 0HLI59TJD2I29:00000002 [INF] Request finished in 421.6402ms 200 application/javascript (791a596a)
+2018-11-08T15:05:24.0488874+07:00 0HLI59TJD2I26:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-11-08T15:05:24.0992438+07:00 0HLI59TJD2I27:00000002 [INF] Request finished in 428.7095ms 200 application/javascript (791a596a)
+2018-11-08T15:05:24.1796530+07:00 0HLI59TJD2I28:00000003 [INF] Sending file. Request path: '"/node_modules/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-11-08T15:05:24.2311176+07:00 0HLI59TJD2I27:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/bootbox/bootbox.js   (ca22a1cb)
+2018-11-08T15:05:24.2583004+07:00 0HLI59TJD2I29:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/notifyjs/dist/notify.js   (ca22a1cb)
+2018-11-08T15:05:24.2673010+07:00 0HLI59TJD2I25:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-11-08T15:05:24.2763171+07:00 0HLI59TJD2I26:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-11-08T15:05:24.3183490+07:00 0HLI59TJD2I27:00000003 [INF] Sending file. Request path: '"/node_modules/bootbox/bootbox.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\bootbox\bootbox.js"' (27b0a520)
+2018-11-08T15:05:24.3425895+07:00 0HLI59TJD2I24:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/node_modules/moment/min/moment.min.js   (ca22a1cb)
+2018-11-08T15:05:24.3720979+07:00 0HLI59TJD2I29:00000003 [INF] Sending file. Request path: '"/node_modules/notifyjs/dist/notify.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\notifyjs\dist\notify.js"' (27b0a520)
+2018-11-08T15:05:24.4021068+07:00 0HLI59TJD2I28:00000003 [INF] Request finished in 456.2857ms 200 font/woff2 (791a596a)
+2018-11-08T15:05:24.4060968+07:00 0HLI59TJD2I26:00000003 [INF] Request finished in 365.4121ms 200 font/woff2 (791a596a)
+2018-11-08T15:05:24.4356861+07:00 0HLI59TJD2I27:00000003 [INF] Request finished in 185.2573ms 200 application/javascript (791a596a)
+2018-11-08T15:05:24.5106084+07:00 0HLI59TJD2I25:00000003 [INF] Sending file. Request path: '"/node_modules/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-11-08T15:05:24.5176586+07:00 0HLI59TJD2I28:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/app/shared/dkteam.js   (ca22a1cb)
+2018-11-08T15:05:24.5769574+07:00 0HLI59TJD2I26:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin-side/js/custom.min.js   (ca22a1cb)
+2018-11-08T15:05:24.6056867+07:00 0HLI59TJD2I24:00000004 [INF] Sending file. Request path: '"/node_modules/moment/min/moment.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\node_modules\moment\min\moment.min.js"' (27b0a520)
+2018-11-08T15:05:24.6572787+07:00 0HLI59TJD2I28:00000004 [INF] Sending file. Request path: '"/app/shared/dkteam.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\app\shared\dkteam.js"' (27b0a520)
+2018-11-08T15:05:24.6825507+07:00 0HLI59TJD2I29:00000003 [INF] Request finished in 306.064ms 200 application/javascript (791a596a)
+2018-11-08T15:05:24.7070079+07:00 0HLI59TJD2I26:00000004 [INF] Sending file. Request path: '"/admin-side/js/custom.min.js"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\admin-side\js\custom.min.js"' (27b0a520)
+2018-11-08T15:05:24.7432546+07:00 0HLI59TJD2I25:00000003 [INF] Request finished in 456.2449ms 200 application/javascript (791a596a)
+2018-11-08T15:05:24.7680626+07:00 0HLI59TJD2I24:00000004 [INF] Request finished in 581.2329ms 200 application/javascript (791a596a)
+2018-11-08T15:05:24.7938460+07:00 0HLI59TJD2I28:00000004 [INF] Request finished in 269.7158ms 200 application/javascript (791a596a)
+2018-11-08T15:05:24.8285666+07:00 0HLI59TJD2I26:00000004 [INF] Request finished in 259.4436ms 200 application/javascript (791a596a)
+2018-11-08T15:05:24.8623046+07:00 0HLI59TJD2I26:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:10454/favicon.ico   (ca22a1cb)
+2018-11-08T15:05:24.8691951+07:00 0HLI59TJD2I26:00000005 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2018-11-08T15:05:24.8788055+07:00 0HLI59TJD2I26:00000005 [INF] Request finished in 14.6807ms 200 image/x-icon (791a596a)
+2018-11-08T15:05:26.4953124+07:00 0HLI59TJD2I26:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:10454/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-11-08T15:05:26.5023497+07:00 0HLI59TJD2I26:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:05:26.5105884+07:00 0HLI59TJD2I26:00000006 [INF] Request finished in 16.1701ms 404  (791a596a)
+2018-11-08T15:05:36.3283761+07:00 0HLI59TJD2I26:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:05:36.3363353+07:00 0HLI59TJD2I26:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:05:36.3442021+07:00 0HLI59TJD2I26:00000007 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:05:36.3512731+07:00 0HLI59TJD2I26:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:05:36.3583736+07:00 0HLI59TJD2I26:00000007 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:05:36.3657009+07:00 0HLI59TJD2I26:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:05:36.3742135+07:00 0HLI59TJD2I26:00000007 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 30.8436ms (afa2e885)
+2018-11-08T15:05:36.3822937+07:00 0HLI59TJD2I26:00000007 [INF] Request finished in 54.0954ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:05:36.4873997+07:00 0HLI59TJD2I26:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:10454/favicon.ico   (ca22a1cb)
+2018-11-08T15:05:36.4953752+07:00 0HLI59TJD2I26:00000008 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2018-11-08T15:05:36.5052766+07:00 0HLI59TJD2I26:00000008 [INF] Request finished in 16.6211ms 200 image/x-icon (791a596a)
+2018-11-08T15:05:38.0367334+07:00 0HLI59TJD2I26:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:05:38.0440258+07:00 0HLI59TJD2I26:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:05:38.0505897+07:00 0HLI59TJD2I26:00000009 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:05:38.0565526+07:00 0HLI59TJD2I26:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:05:38.0625354+07:00 0HLI59TJD2I26:00000009 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:05:38.0695334+07:00 0HLI59TJD2I26:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:05:38.0771331+07:00 0HLI59TJD2I26:00000009 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 27.1067ms (afa2e885)
+2018-11-08T15:05:38.0848128+07:00 0HLI59TJD2I26:00000009 [INF] Request finished in 47.6661ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:05:38.1863120+07:00 0HLI59TJD2I26:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:10454/favicon.ico   (ca22a1cb)
+2018-11-08T15:05:38.1941743+07:00 0HLI59TJD2I26:0000000A [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\16. WEB\DKCoreShop\DKCoreShop\wwwroot\favicon.ico"' (27b0a520)
+2018-11-08T15:05:38.2036477+07:00 0HLI59TJD2I26:0000000A [INF] Request finished in 16.6039ms 200 image/x-icon (791a596a)
+2018-11-08T15:06:45.0412908+07:00 0HLI59TJD2I26:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:10454/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-11-08T15:06:45.0485505+07:00 0HLI59TJD2I26:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:06:45.0557043+07:00 0HLI59TJD2I26:0000000B [INF] Request finished in 14.8192ms 404  (791a596a)
+2018-11-08T15:07:27.4159517+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:07:27.6328644+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:07:27.6531705+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:07:27.6641793+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:07:27.6813775+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-08T15:07:27.7058490+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-08T15:07:27.7150136+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-08T15:07:27.7243296+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-08T15:07:27.7332286+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-08T15:07:27.7421607+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-08T15:07:27.7510768+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-08T15:07:27.7618371+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:07:27.7710002+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:07:27.7807320+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:07:28.7744050+07:00 0HLI5A4SSHK10:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/   (ca22a1cb)
+2018-11-08T15:07:28.8280024+07:00 0HLI5A4SSHK10:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:07:29.0500031+07:00 0HLI5A4SSHK10:00000001 [INF] Executing action method "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:07:32.2614006+07:00 0HLI5A4SSHK10:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:07:33.0835772+07:00 0HLI5A4SSHK10:00000001 [INF] Executed action "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" in 4029.6651ms (afa2e885)
+2018-11-08T15:07:33.0996635+07:00 0HLI5A4SSHK10:00000001 [INF] Request finished in 4346.9782ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:07:34.3882122+07:00 0HLI5A4SSHK10:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T15:07:34.4020070+07:00 0HLI5A4SSHK10:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:07:34.4206675+07:00 0HLI5A4SSHK10:00000002 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:07:34.7454318+07:00 0HLI5A4SSHK10:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T15:07:34.8138149+07:00 0HLI5A4SSHK10:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 394.2395ms (afa2e885)
+2018-11-08T15:07:34.8256351+07:00 0HLI5A4SSHK10:00000002 [INF] Request finished in 435.3417ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:07:34.8513042+07:00 0HLI5A4SSHK10:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T15:07:34.8617772+07:00 0HLI5A4SSHK10:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:07:34.8716131+07:00 0HLI5A4SSHK10:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:07:34.8799517+07:00 0HLI5A4SSHK10:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T15:07:34.8898915+07:00 0HLI5A4SSHK10:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 18.3702ms (afa2e885)
+2018-11-08T15:07:34.9015904+07:00 0HLI5A4SSHK10:00000003 [INF] Request finished in 50.9758ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:07:35.9625446+07:00 0HLI5A4SSHK10:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T15:07:35.9706520+07:00 0HLI5A4SSHK10:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:07:36.0715300+07:00 0HLI5A4SSHK10:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:07:36.1042999+07:00 0HLI5A4SSHK10:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:07:36.1804638+07:00 0HLI5A4SSHK10:00000004 [INF] Executed DbCommand ("34"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-08T15:07:36.3328710+07:00 0HLI5A4SSHK10:00000004 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-08T15:07:36.3792653+07:00 0HLI5A4SSHK10:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:07:36.4088495+07:00 0HLI5A4SSHK10:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-08T15:07:36.4404442+07:00 0HLI5A4SSHK10:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-08T15:07:36.4514795+07:00 0HLI5A4SSHK10:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:07:36.4793931+07:00 0HLI5A4SSHK10:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-08T15:07:36.4908845+07:00 0HLI5A4SSHK10:00000004 [INF] User logged in. (fdce0db4)
+2018-11-08T15:07:36.5074954+07:00 0HLI5A4SSHK10:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-08T15:07:36.5663728+07:00 0HLI5A4SSHK10:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 549.4655ms (afa2e885)
+2018-11-08T15:07:36.5777661+07:00 0HLI5A4SSHK10:00000004 [INF] Request finished in 614.0638ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-08T15:07:36.5921320+07:00 0HLI5A4SSHK10:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:07:36.6012534+07:00 0HLI5A4SSHK10:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:07:36.6131215+07:00 0HLI5A4SSHK10:00000005 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:07:36.7657566+07:00 0HLI5A4SSHK10:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:07:37.0244245+07:00 0HLI5A4SSHK10:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:07:37.0776804+07:00 0HLI5A4SSHK10:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:07:37.5233105+07:00 0HLI5A4SSHK10:00000005 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 910.4658ms (afa2e885)
+2018-11-08T15:07:37.5350384+07:00 0HLI5A4SSHK10:00000005 [INF] Request finished in 941.8141ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:07:39.6242272+07:00 0HLI5A4SSHK10:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:10454/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-11-08T15:07:39.6319766+07:00 0HLI5A4SSHK10:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:07:39.6810784+07:00 0HLI5A4SSHK10:00000006 [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-11-08T15:07:39.6905283+07:00 0HLI5A4SSHK10:00000006 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-11-08T15:07:39.7045159+07:00 0HLI5A4SSHK10:00000006 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-11-08T15:07:39.7144149+07:00 0HLI5A4SSHK10:00000006 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.AccountController.Logout (DKCoreShop)" in 67.7059ms (afa2e885)
+2018-11-08T15:07:39.7249738+07:00 0HLI5A4SSHK10:00000006 [INF] Request finished in 99.8368ms 400  (791a596a)
+2018-11-08T15:09:15.6101076+07:00 0HLI5A4SSHK10:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:10454/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-11-08T15:09:15.6167051+07:00 0HLI5A4SSHK10:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:09:15.6298777+07:00 0HLI5A4SSHK10:00000007 [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-11-08T15:09:15.6362834+07:00 0HLI5A4SSHK10:00000007 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-11-08T15:09:15.6424335+07:00 0HLI5A4SSHK10:00000007 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-11-08T15:09:15.6486016+07:00 0HLI5A4SSHK10:00000007 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.AccountController.Logout (DKCoreShop)" in 25.4787ms (afa2e885)
+2018-11-08T15:09:15.6553382+07:00 0HLI5A4SSHK10:00000007 [INF] Request finished in 45.1801ms 400  (791a596a)
+2018-11-08T15:09:21.6752576+07:00 0HLI5A4SSHK10:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:09:21.6823868+07:00 0HLI5A4SSHK10:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:09:21.6897857+07:00 0HLI5A4SSHK10:00000008 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:09:21.6958901+07:00 0HLI5A4SSHK10:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:09:21.7030300+07:00 0HLI5A4SSHK10:00000008 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:09:21.7126211+07:00 0HLI5A4SSHK10:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:09:21.7339008+07:00 0HLI5A4SSHK10:00000008 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 44.1477ms (afa2e885)
+2018-11-08T15:09:21.7418510+07:00 0HLI5A4SSHK10:00000008 [INF] Request finished in 66.4686ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:09:23.7295315+07:00 0HLI5A4SSHK10:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:09:23.7354177+07:00 0HLI5A4SSHK10:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:09:23.7419454+07:00 0HLI5A4SSHK10:00000009 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:09:23.7486703+07:00 0HLI5A4SSHK10:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:09:23.7555802+07:00 0HLI5A4SSHK10:00000009 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:09:23.7624372+07:00 0HLI5A4SSHK10:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:09:23.7697269+07:00 0HLI5A4SSHK10:00000009 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 28.3667ms (afa2e885)
+2018-11-08T15:09:23.7763216+07:00 0HLI5A4SSHK10:00000009 [INF] Request finished in 46.5827ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:09:25.9993850+07:00 0HLI5A4SSHK10:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin   (ca22a1cb)
+2018-11-08T15:09:26.0055547+07:00 0HLI5A4SSHK10:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:09:26.0134233+07:00 0HLI5A4SSHK10:0000000A [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:09:26.0206785+07:00 0HLI5A4SSHK10:0000000A [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:09:26.0285212+07:00 0HLI5A4SSHK10:0000000A [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:09:26.0366150+07:00 0HLI5A4SSHK10:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:09:26.0444360+07:00 0HLI5A4SSHK10:0000000A [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 31.882ms (afa2e885)
+2018-11-08T15:09:26.0524821+07:00 0HLI5A4SSHK10:0000000A [INF] Request finished in 51.7423ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:09:30.9030059+07:00 0HLI5A4SSHK10:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:10454/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-11-08T15:09:30.9105185+07:00 0HLI5A4SSHK10:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:09:30.9244585+07:00 0HLI5A4SSHK10:0000000B [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-11-08T15:09:30.9319051+07:00 0HLI5A4SSHK10:0000000B [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-11-08T15:09:30.9389701+07:00 0HLI5A4SSHK10:0000000B [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-11-08T15:09:30.9458269+07:00 0HLI5A4SSHK10:0000000B [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.AccountController.Logout (DKCoreShop)" in 28.348ms (afa2e885)
+2018-11-08T15:09:30.9533243+07:00 0HLI5A4SSHK10:0000000B [INF] Request finished in 50.5333ms 400  (791a596a)
+2018-11-08T15:10:32.2418163+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:10:32.4411898+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:10:32.4636978+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:10:32.4747419+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:10:32.4926441+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-08T15:10:32.5166326+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-08T15:10:32.5254865+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-08T15:10:32.5348946+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-08T15:10:32.5446633+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-08T15:10:32.5531040+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-08T15:10:32.5620147+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-08T15:10:32.5718168+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:10:32.5806780+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:10:32.5897614+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:10:33.1269797+07:00 0HLI5A6JQLIN2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/   (ca22a1cb)
+2018-11-08T15:10:33.1792617+07:00 0HLI5A6JQLIN2:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:10:33.3649707+07:00 0HLI5A6JQLIN2:00000001 [INF] Executing action method "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:10:36.5174781+07:00 0HLI5A6JQLIN2:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:10:37.2338263+07:00 0HLI5A6JQLIN2:00000001 [INF] Executed action "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" in 3872.7636ms (afa2e885)
+2018-11-08T15:10:37.2469638+07:00 0HLI5A6JQLIN2:00000001 [INF] Request finished in 4149.8946ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:10:55.2456177+07:00 0HLI5A6JQLIN2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T15:10:55.2565517+07:00 0HLI5A6JQLIN2:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:10:55.2696052+07:00 0HLI5A6JQLIN2:00000002 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:10:55.5580217+07:00 0HLI5A6JQLIN2:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T15:10:55.5989686+07:00 0HLI5A6JQLIN2:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 328.943ms (afa2e885)
+2018-11-08T15:10:55.6077920+07:00 0HLI5A6JQLIN2:00000002 [INF] Request finished in 372.699ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:10:56.1656596+07:00 0HLI5A6JQLIN2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T15:10:56.1721632+07:00 0HLI5A6JQLIN2:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:10:56.1786595+07:00 0HLI5A6JQLIN2:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:10:56.1856611+07:00 0HLI5A6JQLIN2:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T15:10:56.1932385+07:00 0HLI5A6JQLIN2:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 13.7983ms (afa2e885)
+2018-11-08T15:10:56.2014075+07:00 0HLI5A6JQLIN2:00000003 [INF] Request finished in 33.8765ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:10:57.2632151+07:00 0HLI5A6JQLIN2:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T15:10:57.2711345+07:00 0HLI5A6JQLIN2:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:10:57.3596143+07:00 0HLI5A6JQLIN2:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:10:57.3869290+07:00 0HLI5A6JQLIN2:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:10:57.4525173+07:00 0HLI5A6JQLIN2:00000004 [INF] Executed DbCommand ("29"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-08T15:10:57.6287752+07:00 0HLI5A6JQLIN2:00000004 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-08T15:10:57.6724838+07:00 0HLI5A6JQLIN2:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:10:57.6935234+07:00 0HLI5A6JQLIN2:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-08T15:10:57.7230968+07:00 0HLI5A6JQLIN2:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-08T15:10:57.7338987+07:00 0HLI5A6JQLIN2:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:10:57.7611180+07:00 0HLI5A6JQLIN2:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-08T15:10:57.7748047+07:00 0HLI5A6JQLIN2:00000004 [INF] User logged in. (fdce0db4)
+2018-11-08T15:10:57.7951628+07:00 0HLI5A6JQLIN2:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-08T15:10:57.8588465+07:00 0HLI5A6JQLIN2:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 545.2505ms (afa2e885)
+2018-11-08T15:10:57.8681220+07:00 0HLI5A6JQLIN2:00000004 [INF] Request finished in 605.1262ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-08T15:10:57.8792964+07:00 0HLI5A6JQLIN2:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:10:57.8873208+07:00 0HLI5A6JQLIN2:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:10:57.8970798+07:00 0HLI5A6JQLIN2:00000005 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:10:58.0513742+07:00 0HLI5A6JQLIN2:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:10:58.3136268+07:00 0HLI5A6JQLIN2:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:10:58.3797251+07:00 0HLI5A6JQLIN2:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:10:58.5222921+07:00 0HLI5A6JQLIN4:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T15:10:58.5294513+07:00 0HLI5A6JQLIN4:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:10:58.5382241+07:00 0HLI5A6JQLIN4:00000001 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:10:58.5452450+07:00 0HLI5A6JQLIN4:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:10:58.5540223+07:00 0HLI5A6JQLIN4:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-08T15:10:58.5720734+07:00 0HLI5A6JQLIN4:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-08T15:10:58.5804169+07:00 0HLI5A6JQLIN4:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:10:58.5877204+07:00 0HLI5A6JQLIN4:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-08T15:10:58.5960597+07:00 0HLI5A6JQLIN4:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-08T15:10:58.6048127+07:00 0HLI5A6JQLIN4:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:10:58.6127315+07:00 0HLI5A6JQLIN4:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-08T15:10:58.6194241+07:00 0HLI5A6JQLIN4:00000001 [INF] User logged in. (fdce0db4)
+2018-11-08T15:10:58.6264650+07:00 0HLI5A6JQLIN4:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-08T15:10:58.6340722+07:00 0HLI5A6JQLIN4:00000001 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 97.1597ms (afa2e885)
+2018-11-08T15:10:58.6414219+07:00 0HLI5A6JQLIN4:00000001 [INF] Request finished in 119.3716ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-08T15:10:58.6576419+07:00 0HLI5A6JQLIN4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:10:58.6657659+07:00 0HLI5A6JQLIN4:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:10:58.6729858+07:00 0HLI5A6JQLIN4:00000002 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:10:58.6793109+07:00 0HLI5A6JQLIN4:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:10:58.6866951+07:00 0HLI5A6JQLIN4:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:10:58.6965108+07:00 0HLI5A6JQLIN4:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:10:58.9966014+07:00 0HLI5A6JQLIN4:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 278.244ms (afa2e885)
+2018-11-08T15:10:58.9997515+07:00 0HLI5A6JQLIN2:00000005 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 1054.7136ms (afa2e885)
+2018-11-08T15:10:59.0566287+07:00 0HLI5A6JQLIN2:00000005 [INF] Request finished in 1128.5419ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:10:59.0619531+07:00 0HLI5A6JQLIN4:00000002 [INF] Request finished in 355.1761ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:11:00.8710021+07:00 0HLI5A6JQLIN4:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:10454/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-11-08T15:11:00.8795669+07:00 0HLI5A6JQLIN4:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:11:00.8971661+07:00 0HLI5A6JQLIN4:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.AccountController.Logout (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:11:12.8165076+07:00 0HLI5A6JQLIN4:00000003 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-11-08T15:11:12.8269518+07:00 0HLI5A6JQLIN4:00000003 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-11-08T15:11:12.8348029+07:00 0HLI5A6JQLIN4:00000003 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-11-08T15:11:12.8452164+07:00 0HLI5A6JQLIN4:00000003 [INF] Executing RedirectResult, redirecting to "/Account/%2FAdmin%2FLogin%2FIndex". (d98d540e)
+2018-11-08T15:11:12.8541425+07:00 0HLI5A6JQLIN4:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.AccountController.Logout (DKCoreShop)" in 11958.5437ms (afa2e885)
+2018-11-08T15:11:12.8676142+07:00 0HLI5A6JQLIN4:00000003 [INF] Request finished in 11992.1135ms 302  (791a596a)
+2018-11-08T15:11:12.8817011+07:00 0HLI5A6JQLIN4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Account/%2FAdmin%2FLogin%2FIndex   (ca22a1cb)
+2018-11-08T15:11:12.8907586+07:00 0HLI5A6JQLIN4:00000004 [INF] Request finished in 9.3212ms 404  (791a596a)
+2018-11-08T15:12:08.5448161+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:12:08.7415799+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:12:08.7629305+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:12:08.7745071+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:12:08.7923798+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-11-08T15:12:08.8149805+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-11-08T15:12:08.8250235+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-11-08T15:12:08.8353937+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertisementPages] AS [a]" (0723d8ff)
+2018-11-08T15:12:08.8445586+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-11-08T15:12:08.8545868+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-11-08T15:12:08.8644406+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-11-08T15:12:08.8755525+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:12:08.8856578+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:12:08.8957171+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-11-08T15:12:09.3990842+07:00 0HLI5A7GH5PL4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/   (ca22a1cb)
+2018-11-08T15:12:09.6167150+07:00 0HLI5A7GH5PL4:00000001 [INF] Executing action method "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:12.7456902+07:00 0HLI5A7GH5PL4:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:12:12.8228805+07:00 0HLI5A7GH5PL5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T15:12:12.8402458+07:00 0HLI5A7GH5PL5:00000001 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:13.2629541+07:00 0HLI5A7GH5PL5:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T15:12:13.3432992+07:00 0HLI5A7GH5PL5:00000001 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 499.1266ms (afa2e885)
+2018-11-08T15:12:13.3560992+07:00 0HLI5A7GH5PL5:00000001 [INF] Request finished in 535.6518ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:12:13.5319505+07:00 0HLI5A7GH5PL4:00000001 [INF] Executed action "DKCoreShop.Controllers.HomeController.Index (DKCoreShop)" in 3923.1587ms (afa2e885)
+2018-11-08T15:12:13.5442877+07:00 0HLI5A7GH5PL4:00000001 [INF] Request finished in 4164.6907ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:12:13.6923784+07:00 0HLI5A7GH5PL4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:10454/admin/login   (ca22a1cb)
+2018-11-08T15:12:13.7007104+07:00 0HLI5A7GH5PL4:00000002 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:13.7078087+07:00 0HLI5A7GH5PL4:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T15:12:13.7171964+07:00 0HLI5A7GH5PL4:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 16.2214ms (afa2e885)
+2018-11-08T15:12:13.7246695+07:00 0HLI5A7GH5PL4:00000002 [INF] Request finished in 33.8273ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:12:15.4828747+07:00 0HLI5A7GH5PL4:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T15:12:15.5950023+07:00 0HLI5A7GH5PL4:00000003 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:15.6277739+07:00 0HLI5A7GH5PL4:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:12:15.7213843+07:00 0HLI5A7GH5PL4:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-08T15:12:15.8656439+07:00 0HLI5A7GH5PL4:00000003 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-08T15:12:15.9234837+07:00 0HLI5A7GH5PL4:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:12:15.9455670+07:00 0HLI5A7GH5PL4:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-08T15:12:15.9842424+07:00 0HLI5A7GH5PL4:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-08T15:12:15.9955451+07:00 0HLI5A7GH5PL4:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:12:16.0262194+07:00 0HLI5A7GH5PL4:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-08T15:12:16.0381362+07:00 0HLI5A7GH5PL4:00000003 [INF] User logged in. (fdce0db4)
+2018-11-08T15:12:16.0562758+07:00 0HLI5A7GH5PL4:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-08T15:12:16.1273927+07:00 0HLI5A7GH5PL4:00000003 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 587.028ms (afa2e885)
+2018-11-08T15:12:16.1378362+07:00 0HLI5A7GH5PL4:00000003 [INF] Request finished in 654.5184ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-08T15:12:16.1501590+07:00 0HLI5A7GH5PL4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:12:16.1668895+07:00 0HLI5A7GH5PL4:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:12:16.1778831+07:00 0HLI5A7GH5PL4:00000004 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:16.3634876+07:00 0HLI5A7GH5PL4:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:12:16.6573014+07:00 0HLI5A7GH5PL4:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:12:16.7155487+07:00 0HLI5A7GH5PL4:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:12:16.7531268+07:00 0HLI5A7GH5PL5:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T15:12:16.7620922+07:00 0HLI5A7GH5PL5:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:12:16.8114857+07:00 0HLI5A7GH5PL5:00000002 [INF] Antiforgery token validation failed. "The provided antiforgery token was meant for a different claims-based user than the current user." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The provided antiforgery token was meant for a different claims-based user than the current user.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateTokens(HttpContext httpContext, AntiforgeryTokenSet antiforgeryTokenSet)
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-11-08T15:12:16.8262675+07:00 0HLI5A7GH5PL5:00000002 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-11-08T15:12:16.8402297+07:00 0HLI5A7GH5PL5:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-11-08T15:12:16.8489352+07:00 0HLI5A7GH5PL5:00000002 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 77.813ms (afa2e885)
+2018-11-08T15:12:16.8592067+07:00 0HLI5A7GH5PL5:00000002 [INF] Request finished in 105.5198ms 400  (791a596a)
+2018-11-08T15:12:17.2487343+07:00 0HLI5A7GH5PL4:00000004 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 1062.3592ms (afa2e885)
+2018-11-08T15:12:17.2698271+07:00 0HLI5A7GH5PL4:00000004 [INF] Request finished in 1109.3726ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:12:19.3142360+07:00 0HLI5A7GH5PL4:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:10454/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-11-08T15:12:19.3240257+07:00 0HLI5A7GH5PL4:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:12:19.3370773+07:00 0HLI5A7GH5PL4:00000005 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.AccountController.Logout (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:21.5309202+07:00 0HLI5A7GH5PL4:00000005 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-11-08T15:12:21.5424844+07:00 0HLI5A7GH5PL4:00000005 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-11-08T15:12:21.5516969+07:00 0HLI5A7GH5PL4:00000005 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-11-08T15:12:21.5615513+07:00 0HLI5A7GH5PL4:00000005 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-11-08T15:12:21.5711849+07:00 0HLI5A7GH5PL4:00000005 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.AccountController.Logout (DKCoreShop)" in 2233.0439ms (afa2e885)
+2018-11-08T15:12:21.5823866+07:00 0HLI5A7GH5PL4:00000005 [INF] Request finished in 2265.9131ms 302  (791a596a)
+2018-11-08T15:12:21.5965375+07:00 0HLI5A7GH5PL4:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Login/Index   (ca22a1cb)
+2018-11-08T15:12:21.6043787+07:00 0HLI5A7GH5PL4:00000006 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:21.6116227+07:00 0HLI5A7GH5PL4:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T15:12:21.6201576+07:00 0HLI5A7GH5PL4:00000006 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 15.3209ms (afa2e885)
+2018-11-08T15:12:21.6289590+07:00 0HLI5A7GH5PL4:00000006 [INF] Request finished in 32.9023ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:12:31.7156366+07:00 0HLI5A7GH5PL4:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:10454/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-11-08T15:12:31.7229051+07:00 0HLI5A7GH5PL4:00000007 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" with arguments (["DKCoreShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:31.7291315+07:00 0HLI5A7GH5PL4:00000007 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:12:31.7371260+07:00 0HLI5A7GH5PL4:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-11-08T15:12:31.7538894+07:00 0HLI5A7GH5PL4:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-11-08T15:12:31.7613852+07:00 0HLI5A7GH5PL4:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:12:31.7699201+07:00 0HLI5A7GH5PL4:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-11-08T15:12:31.7777845+07:00 0HLI5A7GH5PL4:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-11-08T15:12:31.7852966+07:00 0HLI5A7GH5PL4:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-11-08T15:12:31.7921796+07:00 0HLI5A7GH5PL4:00000007 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-11-08T15:12:31.7985857+07:00 0HLI5A7GH5PL4:00000007 [INF] User logged in. (fdce0db4)
+2018-11-08T15:12:31.8058125+07:00 0HLI5A7GH5PL4:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-11-08T15:12:31.8126620+07:00 0HLI5A7GH5PL4:00000007 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Authen (DKCoreShop)" in 90.1844ms (afa2e885)
+2018-11-08T15:12:31.8202621+07:00 0HLI5A7GH5PL4:00000007 [INF] Request finished in 103.3379ms 200 application/json; charset=utf-8 (791a596a)
+2018-11-08T15:12:31.8298408+07:00 0HLI5A7GH5PL4:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Home/index   (ca22a1cb)
+2018-11-08T15:12:31.8368644+07:00 0HLI5A7GH5PL4:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:12:31.8439488+07:00 0HLI5A7GH5PL4:00000008 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:31.8508925+07:00 0HLI5A7GH5PL4:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-11-08T15:12:31.8580956+07:00 0HLI5A7GH5PL4:00000008 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=DKCoreShop.Data.EF " (9958f5bb)
+2018-11-08T15:12:31.8675101+07:00 0HLI5A7GH5PL4:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-11-08T15:12:31.8766885+07:00 0HLI5A7GH5PL4:00000008 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.HomeController.Index (DKCoreShop)" in 32.6503ms (afa2e885)
+2018-11-08T15:12:31.8846286+07:00 0HLI5A7GH5PL4:00000008 [INF] Request finished in 53.4527ms 200 text/html; charset=utf-8 (791a596a)
+2018-11-08T15:12:37.7276928+07:00 0HLI5A7GH5PL4:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:10454/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-11-08T15:12:37.7345737+07:00 0HLI5A7GH5PL4:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-11-08T15:12:37.7406905+07:00 0HLI5A7GH5PL4:00000009 [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.AccountController.Logout (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:37.7468911+07:00 0HLI5A7GH5PL4:00000009 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-11-08T15:12:37.7538242+07:00 0HLI5A7GH5PL4:00000009 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-11-08T15:12:37.7600008+07:00 0HLI5A7GH5PL4:00000009 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-11-08T15:12:37.7667444+07:00 0HLI5A7GH5PL4:00000009 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-11-08T15:12:37.7737889+07:00 0HLI5A7GH5PL4:00000009 [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.AccountController.Logout (DKCoreShop)" in 32.0936ms (afa2e885)
+2018-11-08T15:12:37.7807670+07:00 0HLI5A7GH5PL4:00000009 [INF] Request finished in 52.8157ms 302  (791a596a)
+2018-11-08T15:12:37.7899075+07:00 0HLI5A7GH5PL4:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:10454/Admin/Login/Index   (ca22a1cb)
+2018-11-08T15:12:37.7962583+07:00 0HLI5A7GH5PL4:0000000A [INF] Executing action method "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-11-08T15:12:37.8022993+07:00 0HLI5A7GH5PL4:0000000A [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-11-08T15:12:37.8096176+07:00 0HLI5A7GH5PL4:0000000A [INF] Executed action "DKCoreShop.Areas.Admin.Controllers.LoginController.Index (DKCoreShop)" in 12.544ms (afa2e885)
+2018-11-08T15:12:37.8167557+07:00 0HLI5A7GH5PL4:0000000A [INF] Request finished in 25.8578ms 200 text/html; charset=utf-8 (791a596a)

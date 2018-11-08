@@ -72,8 +72,13 @@ namespace DKCoreShop
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
+            //Repositories
+            services.AddTransient<IFunctionRepository, FunctionRepository>();
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+
+            //Services
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddTransient<IFunctionService, FunctionService>();
 
             services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
         }

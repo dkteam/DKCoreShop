@@ -8,5 +8,7 @@ namespace DKCoreShop.Utilities.Constants
     {
         public const string DefaultContactId = "DefaultContactId";
         public const string DefaultFooterId = "DefaultFooterId";
+
+        public const string AdminRole = "Admin";
     }
 }

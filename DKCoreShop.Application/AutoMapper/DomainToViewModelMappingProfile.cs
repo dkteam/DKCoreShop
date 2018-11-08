@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DKCoreShop.Application.ViewModels.Product;
+using DKCoreShop.Application.ViewModels.System;
 using DKCoreShop.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace DKCoreShop.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<ProductCategory, ProductCategoryViewModel>();
+            CreateMap<Function, FunctionViewModel>();
         }
     }
 }
