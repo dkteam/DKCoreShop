@@ -1,5 +1,6 @@
 ﻿var productController = function () {
     this.initialize = function () {
+        LoadCategories();
         loadData();
         registerEvents();
     }
@@ -11,6 +12,35 @@
             dkteam.configs.pageIndex = 1;
             loadData(true);
         });
+
+        $('#btnSearch').on('click', function () {
+            loadData();
+        });
+
+        $('#txtKeyword').on('keypress', function (e) {
+            if (e.which === 13) {
+                loadData();
+            }
+        });
+    }
+
+    function LoadCategories() {
+        $.ajax({
+            type: 'GET',
+            url: '/admin/product/GetAllCategories',
+            dataType: 'json',
+            success: function (response) {
+                var render = "<option value=''>---Select category---</option>";
+                $.each(response, function (i, item) {
+                    render += "<option value = '" + item.Id + "'>" + item.Name + "</option>"
+                });
+                $('#ddlCategorySearch').html(render);
+            },
+            error: function (status) {
+                console.log(status);
+                //dkteam.notify('Cannot loading product category data', 'error');
+            }
+        });
     }
 
     function loadData(isPageChanged) {
@@ -19,7 +49,7 @@
         $.ajax({
             type: 'GET',
             data: {
-                categoryId: null,
+                categoryId: $('#ddlCategorySearch').val(),
                 keyword: $('#txtKeyword').val(),
                 page: dkteam.configs.pageIndex,
                 pageSize: dkteam.configs.pageSize
@@ -27,7 +57,6 @@
             url: '/admin/product/GetAllPaging',
             dataType: 'json',
             success: function (response) {
-                console.log(response);
                 $.each(response.Results, function (i, item) {
                     renderData += Mustache.render(template, {
                         Image: item.Image == null ? '<img src = "/admin-site/images/user.png" width=25' : '<img src ="' + item.Image + '" width=25>',
