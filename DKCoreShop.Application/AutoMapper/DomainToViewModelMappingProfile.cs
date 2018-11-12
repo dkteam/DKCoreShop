@@ -14,6 +14,7 @@ namespace DKCoreShop.Application.AutoMapper
         {
             CreateMap<ProductCategory, ProductCategoryViewModel>();
             CreateMap<Function, FunctionViewModel>();
+            CreateMap<Product, ProductViewModel>();
         }
     }
 }

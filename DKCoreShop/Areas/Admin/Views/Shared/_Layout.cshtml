@@ -19,6 +19,7 @@
     <link href="~/node_modules/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
     <!-- Custom Theme Style -->
     <link href="~/admin-side/css/custom.min.css" rel="stylesheet" />
+    @RenderSection("Styles", required: false)
 </head>
 <body class="nav-md">
     <div class="container body">
@@ -167,22 +168,12 @@
     <script src="~/node_modules/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="~/node_modules/nprogress/nprogress.js"></script>
+    <!-- Mustache -->
+    <script src="~/node_modules/mustache/mustache.js"></script>
     <!-- Chart.js -->
     <script src="~/node_modules/chart.js/dist/Chart.min.js"></script>
     <!-- jQuery Sparklines -->
     <script src="~/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
-    <!-- Flot -->
-    @*<script src="~/node_modules/flot/jquery.flot.js"></script>
-        <script src="~/node_modules/flot/jquery.flot.pie.js"></script>
-        <script src="~/node_modules/flot/jquery.flot.time.js"></script>
-        <script src="~/node_modules/flot/jquery.flot.stack.js"></script>
-        <script src="~/node_modules/flot/jquery.flot.resize.js"></script>*@
-    <!-- Flot plugins -->
-    @*<script src="~/node_modules/flot-orderbars/js/jquery.flot.orderBars.js"></script>
-        <script src="~/node_modules/flot-spline/js/jquery.flot.spline.min.js"></script>
-        <script src="~/node_modules/flot.curvedlines/curvedLines.js"></script>*@
-    <!-- DateJS -->
-    @*<script src="../vendors/DateJS/build/date.js"></script>*@
     <!-- bootstrap-daterangepicker -->
     <script src="~/node_modules/moment/min/moment.min.js"></script>
     <script src="~/node_modules/bootstrap-daterangepicker/daterangepicker.js"></script>
@@ -192,5 +183,7 @@
     <script src="~/app/shared/dkteam.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="~/admin-side/js/custom.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
