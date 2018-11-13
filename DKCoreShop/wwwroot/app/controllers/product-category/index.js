@@ -17,11 +17,56 @@
                         sortOrder: item.SortOrder
                     });
                     var treeArr = dkteam.unflattern(data);
-
+                    treeArr.sort(function (a, b) {
+                        return a.sortOrder - b.sortOrder;
+                    });
                     //var $tree = $('#treeProductCategory');
 
                     $('#treeProductCategory').tree({
-                        data: treeArr
+                        data: treeArr,
+                        dnd: true,
+                        onDrop: function (target, source, point) {
+                            var targetNode = $(this).tree('getNode', target);
+
+                            if (point === 'append') {
+                                var children = [];
+                                $.each(targetNode.children, function (i, item) {
+                                    children.push({
+                                        key: item.id,
+                                        value: i
+                                    });
+                                });
+
+                                //update to database
+                                $.ajax({
+                                    url: '/Admin/ProductCategory/UpdateParentId',
+                                    type: 'post',
+                                    dataType: 'json',
+                                    data: {
+                                        sourceId: source.id,
+                                        targetId: targetNode.id,
+                                        items: children
+                                    },
+                                    success: function (res) {
+                                        loadData();
+                                    }
+                                });
+                            }
+                            else if (point === 'top' || point === 'bottom') {
+                                $.ajax({
+                                    url: '/Admin/ProductCategory/ReOrder',
+                                    type: 'post',
+                                    dataType: 'json',
+                                    data: {
+                                        sourceId: source.id,
+                                        targetId: targetNode.id
+                                    },
+                                    success: function (res) {
+                                        loadData();
+                                    }
+                                });
+                            }
+                        }
                     });
                 });
             }
