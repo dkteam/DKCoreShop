@@ -62,13 +62,14 @@ namespace DKCoreShop.Application.Implementation
                     product.ProductTags.Add(productTag);
                 }
                 _productRepository.Add(product);
-
+                return productVm;
             }
             else
             {
-                _productRepository.Add(product);
+                _productRepository.Add(Mapper.Map<ProductViewModel, Product>(productVm));
+                return productVm;
             }
-            return productVm;
+           
         }
 
         public void Delete(int id)

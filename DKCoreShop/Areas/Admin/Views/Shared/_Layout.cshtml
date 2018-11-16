@@ -17,10 +17,11 @@
     <link href="~/node_modules/nprogress/nprogress.css" rel="stylesheet" />
     <!-- Alertify -->
     <link href="~/node_modules/alertifyjs/build/css/alertify.min.css" rel="stylesheet" />
-    @*<link href="~/node_modules/alertifyjs/build/css/alertify.rtl.min.css" rel="stylesheet" />*@
     <link href="~/node_modules/alertifyjs/build/css/themes/bootstrap.rtl.min.css" rel="stylesheet" />
     <!-- bootstrap-daterangepicker -->
     <link href="~/node_modules/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <!-- CKEditor skin -->
+    <link href="~/node_modules/ckeditor/skins/moono-lisa/editor.css" rel="stylesheet" />
     <!-- Custom Theme Style -->
     <link href="~/admin-side/css/custom.min.css" rel="stylesheet" />
     @RenderSection("Styles", required: false)
@@ -183,6 +184,7 @@
     <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/lib/jquery-validation/localization/messages_vi.js"></script>
+    <script src="~/node_modules/ckeditor/ckeditor.js"></script>
 
     <!-- jQuery Sparklines -->
     <script src="~/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
@@ -190,9 +192,7 @@
     <script src="~/node_modules/moment/min/moment.min.js"></script>
     <script src="~/node_modules/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-    @*<script src="~/node_modules/notifyjs/dist/notify.js"></script>*@
     <script src="~/node_modules/alertifyjs/build/alertify.min.js"></script>
-    @*<script src="~/node_modules/alertifyjs/build/alertify.js"></script>*@
     <script src="~/node_modules/bootbox/bootbox.js"></script>
     <script src="~/app/shared/dkteam.js"></script>
     <!-- Custom Theme Scripts -->
