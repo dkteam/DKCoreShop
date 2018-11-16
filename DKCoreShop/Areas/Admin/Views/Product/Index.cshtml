@@ -1,7 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
+@section Styles{
+    <link href="~/node_modules/jquery-easyui/css/easyui.css" rel="stylesheet" />
+}
 @section Scripts{
+    <script src="~/node_modules/jquery-easyui/js/jquery.easyui.min.js"></script>
     <script src="~/app/controllers/product/index.js"></script>
     <script>
         var products = new productController();
@@ -27,6 +31,9 @@
             <select class="form-control" id="ddlCategorySearch">
                 <option>---Select category---</option>
             </select>
+        </div>
+        <div class="col-md-2 col-sm-12 form-group pull-right">
+            <button id="btnCreate" class="btn-success">Create</button>
         </div>
     </div>
 </div>
@@ -96,8 +103,9 @@
         <td class=" ">{{CreatedDate}}</td>
         <td class=" ">{{{Status}}}</td>
         <td>
-            <button class="btn btn-default btn-sm"><i class="fa fa-pencil"></i></button>
-            <button class="btn btn-default btn-sm"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-default btn-sm btn-edit" data-id="{{Id}}"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-default btn-sm btn-delete" data-id="{{Id}}"><i class="fa fa-trash"></i></button>
         </td>
     </tr>
 </script>
+@Html.Partial("_AddEditModal.cshtml")
